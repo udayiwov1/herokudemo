@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.page-container {
+  position: relative;
+}
+
+.global-header {
+  background-color: #222222;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.global-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.global-header-container p {
+  font-size: 13px;
+  color: #FFFFFF;
+  clear: right;
+  float: left;
+  margin-right: 20px;
+}
+
+.global-header-container .left img {
+  width: 15px;
+  margin-right: 0.5em;
+  clear: right;
+  float: left;
+}
+
+.global-header-container .fa {
+  font-size: 16px;
+}
+
+/*---- css for banner slider ----*/
+.hero-carousal {
+  position: relative;
+}
+
+.hero-carousal .hashtag-button {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 25px;
+  height: 190px;
+  background-color: #8d6c4c;
+  z-index: 2;
+}
+
+.hero-carousal .hashtag-button p {
+  color: #FFFFFF;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-top: 18px;
+  margin-left: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hero-carousal .owl-stage .owl-item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  content: "";
+}
+
+.hero-carousal .owl-dots {
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  z-index: 3 !important;
+}
+
+.hero-carousal .owl-dots button span {
+  background-color: #FFFFFF !important;
+  border: 1px solid #000;
+}
+
+.hero-carousal .owl-dots button.active span {
+  background-color: transparent !important;
+  border: 1px solid #FFF;
+}
+
+.hero-carousal .owl-item img {
+  height: 85vh;
+}
+
+.hero-carousal .chat-icon {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  background-color: #FFF;
+  padding: 19px 30px 15px 15px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.hero-carousal .chat-icon img {
+  width: 30px;
+}
+
+.hero-carousal .text-bottom-right {
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  z-index: 2;
+  color: #FFF;
+}
+
+.hero-carousal .text-bottom-right h1 {
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+/* css for primary nav */
+
+.primary-nav {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  right: 0;
+  color: #FFFFFF;
+  z-index: 99;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 10%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+.primary-nav .left-nav{
+  width: 15%;
+  height: 100px;
+  background-image: url('../images/brands-sprite.png');
+  background-position: 1% 30%;
+}
+.primary-nav .middle-nav{
+  width: 83%;
+  padding: 3% 0 0 0;
+  justify-content: center;
+  align-items: center;
+}
+.primary-nav .middle-nav ul{
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.primary-nav .middle-nav ul li{
+  display: inline-block;
+  margin: 0 1% 0 0;
+}
+.primary-nav .middle-nav ul li a{
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.primary-nav .right-nav{
+  width: 2%;
+  padding: 3% 0 0 0;
+}
+.primary-nav .right-nav span{
+  display: block;
+  margin-top: 4px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.carousel{
+  display: block;
+  min-height: 300px;
+  background-color: #222222;
+}
+
+/*# sourceMappingURL=style.css.map */
