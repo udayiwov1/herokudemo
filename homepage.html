@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frasers</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/OwlCarousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- global header starts -->
+  <div class="global-header">
+    <div class="global-header-container">
+      <div class="left">
+        <p>EN <i class="fa fa-angle-down"></i></p>
+        <img src="./assets/images/gheader/sgd.png" alt="SGD">
+        <p>  SGD <i class="fa fa-angle-down"></i></p> 
+        <p><i class="fa fa-phone"></i></p>
+        <p><i class="fa fa-envelope"></i></p>
+        <p>MY RESERVATIONS</p>
+      </div>
+      <div class="right">
+        <p>MEMBER SIGN UP | SIGN IN</p>
+      </div>
+    </div>
+  </div>
+  <!-- global header ends -->
+
+  <!-- primary nav starts -->
+  <nav class="primary-nav">
+    <div class="container">
+      <div class="navigation left-nav"></div>
+      <div class="navigation middle-nav">
+        <ul>
+          <li><a href="">locations</a></li>
+          <li><a href="">offers</a></li>
+          <li><a href="">extended stay</a></li>
+          <li><a href="">business travel</a></li>
+          <li><a href="">our brands</a></li>
+        </ul>
+      </div>
+      <div class="navigation right-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+    <!-- primary nav ends -->
+
+    
+  <div class="page-container">  
+    <div class="hero-carousal">       
+      <div class="hashtag-button"><p>#Frasercares-covid-19</p></div>
+      <div class="owl-carousel owl-theme">
+        <div> <img src="./assets/images/banner/slider1.png" alt=""> </div>
+        <div> <img src="./assets/images/banner/slider2.png" alt=""> </div>
+        <div> <img src="./assets/images/banner/slider3.png" alt=""> </div>
+      </div>
+      <div  class="chat-icon"><img src="./assets/images/banner/chat.png" alt="chat"></div>
+      <div class="text-bottom-right"><h1>A warm welcome home. </h1></div>
+    </div>  
+  </div>
+
+<script src="./assets/OwlCarousel2/dist/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.hero-carousal .owl-carousel').owlCarousel({
+      items:1,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+      autoHeight:true
+    });
+  });
+</script>
+
+</body>
+</html>
