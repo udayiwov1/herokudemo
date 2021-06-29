@@ -75,8 +75,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
   content: "";
 }
 
@@ -133,14 +133,14 @@
 /* css for primary nav */
 
 .primary-nav {
-  position: fixed;
+  position: absolute;
   top: 46px;
   left: 0;
   right: 0;
   color: #FFFFFF;
   z-index: 99;
 }
-.container {
+.nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,21 +168,32 @@
 }
 .primary-nav .middle-nav ul li{
   display: inline-block;
-  margin: 0 1% 0 0;
+  margin: 0 4% 0 0;
 }
 .primary-nav .middle-nav ul li a{
   display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
 }
 .primary-nav .right-nav{
-  width: 2%;
+  width: 3%;
   padding: 3% 0 0 0;
+}
+.primary-nav .right-nav .btn{
+  padding: 0;
+  width: 100%;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 0;
+  cursor: pointer;
 }
 .primary-nav .right-nav span{
   display: block;
-  margin-top: 4px;
+  margin-bottom: 8px;
   height: 1px;
   background-color: #ffffff;
 }
@@ -192,4 +203,83 @@
   background-color: #222222;
 }
 
+.copyright-footer {
+  padding: 1% 0;
+  background-color: #000000;
+  color: #FFFFFF;
+  float: left;
+  width: 100%;
+}
+
+.copyright-footer a {
+  float: left;
+  clear: both;
+}
+
+.copyright-footer a img {
+  width: 113px;
+}
+
+.copyright-footer p {
+  padding: 1%;
+  float: left;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  background-color: #dcdcdc;
+  padding: 0 10%;
+}
+
+.footer-container .frasers-properties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.footer-container .frasers-properties a {
+  position: relative;
+  vertical-align: text-bottom;
+}
+
+.footer-container .frasers-properties a:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15%;
+  bottom: 0;
+  width: 2px;
+  background-color: #222222;
+}
+
+.footer-container .footer-menu-smicons {
+  padding: 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-container .footer-menu-smicons .fmenus {
+  font-size: 14px;
+}
+
+.footer-container .footer-menu-smicons .fmenus a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #808080;
+  margin-right: 18px;
+}
+
+.footer-container .footer-menu-smicons .fsmicons .fa {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */

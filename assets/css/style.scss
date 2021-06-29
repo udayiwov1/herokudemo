@@ -1,46 +1,46 @@
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 $bg-color: #222222;
 $font-color: #FFFFFF;
 
 .page-container {
-    position: relative;
+  position: relative;
 }
 
 .global-header {
-    background-color: $bg-color;
-    color: $font-color;
-    z-index: 1;
+  background-color: $bg-color;
+  color: $font-color;
+  z-index: 1;
 }
 
 .global-header-container {
-    display: flex;
-    padding: 1% 10%;
-    justify-content: space-between;
+  display: flex;
+  padding: 1% 10%;
+  justify-content: space-between;
 
-    p {
-        font-size: 13px;
-        color: $font-color;
-        clear: right;
-        float: left;
-        margin-right: 20px;
-    }
+  p {
+    font-size: 13px;
+    color: $font-color;
+    clear: right;
+    float: left;
+    margin-right: 20px;
+  }
 
-    .left{
-        img {
-            width: 15px;
-            margin-right: 0.5em;
-            clear: right;
-            float: left;
-        }
+  .left{
+    img {
+      width: 15px;
+      margin-right: 0.5em;
+      clear: right;
+      float: left;
     }
+  }
 
-    .fa {
-        font-size: 16px;
-    }
+  .fa {
+    font-size: 16px;
+  }
 }
 
 /*---- css for banner slider ----*/
@@ -74,7 +74,7 @@ $font-color: #FFFFFF;
         top: 0;
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0), rgba(0,0,0,0.6));
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0), rgba(0,0,0,0.9));
         content: "";
     }
 
@@ -131,6 +131,64 @@ $font-color: #FFFFFF;
             word-spacing: 5px;
             letter-spacing: 2px;
             font-weight: 400;
+        }
+    }
+}
+
+.copyright-footer{    
+    padding: 0 10%;
+    background-color: $bg-color;
+    color: $font-color;
+    float: left;
+    width: 100%;
+    a {
+        float:left;
+        clear: both;
+        img {
+            width: 113px;
+        }
+    }
+
+    p {
+        padding: 1%;
+        float: left;      
+        background-color: $bg-color;
+        color: $font-color;
+    }
+}
+
+.footer-container {
+    background-color: #dcdcdc;
+    padding-bottom: 25px;
+    .frasers-properties {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;   
+        a {     
+            vertical-align: text-bottom;
+        }
+    }
+
+    .footer-menu-smicons {  
+        padding: 1% 10%;
+        display: flex;
+        justify-content: space-between;
+        .fmenus {
+            font-size: 14px;
+                a{       
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: #808080;
+                    margin-right: 18px;
+                }
+        }
+
+        .fsmicons {
+            .fa{
+                font-size: 20px;
+                font-weight: 500;
+                margin-right: 10px;
+            }
         }
     }
 }
