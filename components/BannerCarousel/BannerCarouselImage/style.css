@@ -1,0 +1,140 @@
+@import "../../../site/css/_fonts.css";
+
+.hero-image-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  font-family: 'Cormorant_Garamond-Medium';
+}
+
+.hero-image-carousel .hero-image-carousel__image-container::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  content: "";
+}
+
+.hero-image-carousel .hero-image-carousel__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container img {
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container h1 {
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .owl-dots {
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .owl-dots button span {
+  background-color: #FFFFFF !important;
+  border: 1px solid #FFF;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .owl-dots button.active span {
+  background-color: transparent !important;
+  border: 1px solid #FFF;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .owl-item img {
+  height: 80vh;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .chat-icon {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  background-color: #FFF;
+  padding: 19px 30px 15px 15px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.hero-image-carousel .hero-image-carousel__image-container .chat-icon img {
+  width: 30px;
+  height: auto;
+}
+
+.text-top-left h1 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  z-index: 1;
+}
+
+.text-top-center h1 {
+  position: absolute;
+  top: 100px;
+  left: 550px;
+  z-index: 1;
+}
+
+.text-top-right h1 {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 1;
+}
+
+.text-center-left h1 {
+  position: absolute;
+  left: 150px;
+  top: 250px;
+  z-index: 1;
+}
+
+.text-center-center h1 {
+  position: absolute;
+  top: 250px;
+  left: 540px;
+  z-index: 1;
+}
+
+.text-center-right h1 {
+  position: absolute;
+  right: 150px;
+  top: 250px;
+  z-index: 1;
+}
+
+.text-bottom-left h1 {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  z-index: 1;
+}
+
+.text-bottom-center h1 {
+  position: absolute;
+  bottom: 100px;
+  left: 540px;
+  z-index: 1;
+}
+
+.text-bottom-right h1 {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

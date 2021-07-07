@@ -1,5 +1,6 @@
 @import 'global';
 @import 'fonts';
+@import 'icons';
 @import '../../components/GlobalHeader/globalheader';
 @import '../../components/PrimaryHeader/primary_nav';
 @import '../../components/DesktopAlert/desktop_aLert';
@@ -7,4 +8,10 @@
 @import '../../components/BannerCarousel/BannerCarouselImage/banner_carousel_image';
 @import '../../components/BannerCarousel/BannerCarouselVideo/banner_carousel_video';
 @import '../../components/TextOverImage/text_over_image';
+@import '../../components/GlobalFootprint/global_footsprint';
+@import '../../components/BannerCarousel/ChatIcon/chat_icon';
 @import '../../components/FraserWorld/fraser_world';
+@import '../../components/ColumnControl/column_control';
+@import '../../components/GlobalFooter/footer';
+
+@import '../../components/BannerCarouselworking/banner_carousel';

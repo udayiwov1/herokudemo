@@ -1,0 +1,89 @@
+.global-footprint {    
+    background-color: #dbdbdb;
+    padding: 50px 0;
+    font-family: 'Cormorant_Garamond-Medium';
+    .global-footprint-header-container {
+        .global-footprint-header {
+            margin-bottom: 10px;
+            p {
+                font-family: 'Cormorant_Garamond-Medium';
+                display: inline;
+            }
+            p:nth-child(1) {                   
+                font-size: 28px;
+                font-weight: 500;             
+                margin-left: 500px;
+            }
+            p.global-footprint-veiwmore {
+                font-family: 'Cormorant_Garamond-SemiBold';
+                font-size: 14px;
+                font-weight: 400;
+                color: #866d4b;                
+                margin-left: 300px;
+            }
+        }
+    }
+    .owl-carousel {        
+        .owl-stage-outer {
+            padding: 50px;
+        }
+        .item {
+            position: relative;
+            transition: all .9s ease;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #222;
+                opacity: 0.2;
+                z-index: 3;            
+            }
+  
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0px 5px 26px 5px rgba(0, 0, 0, 0.8);
+  
+                .global-footprint__owl-carousel_item_cityname {
+                    .properties-no {
+                        display: none;
+                    }
+                    .properties-list {
+                        display: block;
+                    }
+                }
+            }
+            
+            .global-footprint__owl-carousel_item_cityname {
+                position: absolute;
+                padding: 10px 20px;
+                width: 92%;
+                left: 0;
+                bottom: 20px;
+                color: #FFF;
+                p {
+                    text-align: center;
+                    margin: 10px;
+                    padding: 0 25px;
+                    font-family: 'Cormorant_Garamond-Medium';
+                }
+                .country-city {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .properties-list {                    
+                    font-size: 14px;
+                    display: none;
+                    text-decoration: underline;
+                    p {
+                        margin: 10px 0;
+                        font-family: 'Cormorant_Garamond-Medium';
+                    }
+                }
+            }
+        }
+    }
+  }
