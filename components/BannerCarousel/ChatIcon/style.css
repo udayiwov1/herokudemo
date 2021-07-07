@@ -1,0 +1,17 @@
+@import "../../../site/css/_fonts.css";
+
+.chat-icon {
+    position: fixed;
+    right: 40px;
+    bottom: 190px;
+    z-index: 2;
+    background-color: #FFF;
+    padding: 19px 30px 15px 15px;
+    border-radius: 50%;
+    width: 20px;
+  }
+  
+  .chat-icon img {
+    width: 30px;
+    height: auto;
+  }

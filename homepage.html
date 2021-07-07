@@ -4,128 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FH Hospitality</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/OwlCarousel2/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./assets/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+  <title>Text over Image</title>
+
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-  <!-- global header starts -->
-  <div class="global-header">
-    <div class="global-header-container">
-      <div class="left">
-        <p>EN <i class="fa fa-angle-down"></i></p>
-        <img src="./assets/images/gheader/sgd.png" alt="SGD">
-        <p>  SGD <i class="fa fa-angle-down"></i></p> 
-        <p><i class="fa fa-phone"></i></p>
-        <p><i class="fa fa-envelope"></i></p>
-        <p>MY RESERVATIONS</p>
+  <section class="section-text-over-image">
+    <img class="section-text-over-image__background_image" src="./assets/images/corporate-office.png" alt="" />
+    <div class="text-over-image__title_wrapper align_left">
+    <!-- <div class="text-over-image__title_wrapper align_right"> -->
+      <h2 class="text-over-image__title">business travel</h2>
+      <div class="text-over-image__desc">
+        <p>
+          Join our corporate programme nd take advantage of the great benefits at more than 120 
+          serviced apratments and hotel residence across Asia, Europe, Middle East and Africa
+        </p>
       </div>
-      <div class="right">
-        <p>MEMBER SIGN UP | SIGN IN</p>
-      </div>
+      <a class="section-text-over-image__action_link" href="#">learn more</a>
     </div>
-  </div>
-  <!-- global header ends -->
-
-  <!-- primary nav starts -->
-  <nav class="primary-nav">
-    <div class="nav-container">
-      <div class="navigation left-nav"></div>
-      <div class="navigation middle-nav">
-        <ul>
-          <li><a href="#">locations</a></li>
-          <li><a href="#">offers</a></li>
-          <li><a href="#">extended stay</a></li>
-          <li><a href="#">business travel</a></li>
-          <li><a href="#">our brands</a></li>
-        </ul>
-      </div>
-      <div class="navigation right-nav">
-        <button class="btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-  <!-- primary nav ends -->
-
-  <!-- banner carousel starts -->
-  <div class="page-container">  
-    <div class="hero-carousal">
-      <div class="hashtag-button"><p>#Frasercares-covid-19</p></div>
-      <div class="owl-carousel owl-theme">
-        <div> <img src="./assets/images/banner/slider1.png" alt=""> </div>
-        <div> <img src="./assets/images/banner/slider2.png" alt=""> </div>
-        <div> <img src="./assets/images/banner/slider3.png" alt=""> </div>
-      </div>
-      <div  class="chat-icon"><img src="./assets/images/banner/chat.png" alt="chat"></div>
-      <div class="text-bottom-right"><h1>A warm welcome home. </h1></div>
-    </div>  
-  </div>
-  <!-- banner carousel ends -->
-
-  <!-- footer starts -->
-  <footer>
-    <div class="footer-container">
-      <div class="frasers-properties">
-        <a><img src="./assets/images/footer/hospitality.png" alt=""></a>
-        <a><img src="./assets/images/footer/suites.png" alt=""></a>
-        <a><img src="./assets/images/footer/residence.png" alt=""></a>
-        <a><img src="./assets/images/footer/place.png" alt=""></a>
-        <a><img src="./assets/images/footer/capri.png" alt=""></a>
-        <a><img src="./assets/images/footer/modena.png" alt=""></a>
-        <a><img src="./assets/images/footer/malmaison.png" alt=""></a>
-        <a><img src="./assets/images/footer/divin.png" alt=""></a>
-      </div>
-      <div class="footer-menu-smicons">
-        <div class="fmenus">
-          <a href="#">News</a>
-          <a href="#">Sustainability</a>
-          <a href="#">Investor Relations</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Best Rate Guarantee</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Site Map</a>
-        </div>
-        <div class="fsmicons">
-          <i class="fa fa-wechat"></i>
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>                
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-linkedin-square"></i>
-        </div>
-      </div>  
-    </div>
-    <div class="copyright-footer">
-      <div class="footer-container">
-        <a href="#"><img src="./assets/images/footer/frasers-property-logo.png" alt=""></a>
-        <p>&copy; 2021 Frasers Hospitality Pte Ltd. A member of Frasers Property Group. </p>
-      </div>
-    </div>
-</footer>
-<!-- footer ends -->
-
-<script src="./assets/OwlCarousel2/dist/owl.carousel.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.hero-carousal .owl-carousel').owlCarousel({
-      items:1,
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true,
-      autoHeight:true
-    });
-  });
-</script>
+  </section>
 
 </body>
 </html>
