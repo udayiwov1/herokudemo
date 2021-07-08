@@ -3,25 +3,24 @@
     padding: 50px 0;
     font-family: 'Cormorant_Garamond-Medium';
     .global-footprint-header-container {
-        .global-footprint-header {
-            margin-bottom: 10px;
-            p {
-                font-family: 'Cormorant_Garamond-Medium';
-                display: inline;
-            }
-            p:nth-child(1) {                   
-                font-size: 28px;
-                font-weight: 500;             
-                margin-left: 500px;
-            }
-            p.global-footprint-veiwmore {
-                font-family: 'Cormorant_Garamond-SemiBold';
-                font-size: 14px;
-                font-weight: 400;
-                color: #866d4b;                
-                margin-left: 300px;
-            }
+      .global-footprint-header {
+        margin-bottom: 10px;
+        h3{                   
+          font-size: 28px;
+          font-weight: 500;
+          text-align: center;
+          font-family: 'Cormorant_Garamond-Medium';
         }
+        .global-footprint-veiwmore {
+          font-family: "Cormorant_Garamond-SemiBold";
+          font-size: 14px;
+          font-weight: 400;
+          color: #866d4b;
+          text-align: right;
+          float: right;
+          margin-top: 10px;
+        }
+      }
     }
     .owl-carousel {        
         .owl-stage-outer {
@@ -60,15 +59,16 @@
             .global-footprint__owl-carousel_item_cityname {
                 position: absolute;
                 padding: 10px 20px;
-                width: 92%;
+                width: 100%;
                 left: 0;
                 bottom: 20px;
                 color: #FFF;
+                z-index: 9;
                 p {
                     text-align: center;
                     margin: 10px;
-                    padding: 0 25px;
                     font-family: 'Cormorant_Garamond-Medium';
+                    padding: 0 15px;
                 }
                 .country-city {
                     font-size: 18px;
@@ -78,6 +78,7 @@
                     font-size: 14px;
                     display: none;
                     text-decoration: underline;
+                    text-underline-offset: 6px;
                     p {
                         margin: 10px 0;
                         font-family: 'Cormorant_Garamond-Medium';

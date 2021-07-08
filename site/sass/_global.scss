@@ -193,7 +193,19 @@ textarea {
 .color-light-grey {
 	color: #b9b9b9;
 }
+@media (min-width:1281px) { 
+  body{
+    // font-size: 20px !important;
+  } 
+  .grid-container {
+    max-width: 1140px;
+  }
+}
+
 @media (min-width: 1200px) {
+  body{
+    // font-size: 20px !important;
+  }
 	.grid-container {
 		max-width: 1140px;
 	}

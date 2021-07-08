@@ -2,7 +2,7 @@
   position: fixed;
   right: 5%;
   top: 70%;
-  z-index: 2;
+  z-index: 999;
   background-color: #FFF;
   padding: 15px 0;
   border-radius: 50%;
@@ -15,4 +15,11 @@
   width: 30px;
   height: 100%;
   object-fit: contain;
+}
+@media (min-width:1280px) {  
+  .chat-icon{
+    top: 74% !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
 }
