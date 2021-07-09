@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 .column-control .column-control__image img{
   margin-right: 15px;
@@ -13,6 +14,7 @@
   font-family: 'Cormorant_Garamond-Regular';
   text-transform: capitalize;
   font-size: 28px;
+
 }
 .column-control__text_title .yours_style{
   display: inline-block;
@@ -28,8 +30,14 @@
 }
 .column-control__text_desc{
   font-family: 'Roboto-Medium';
-  color: #5f5f5f;
+   color: #5f5f5f;
+   word-spacing: 3px;
+   text-align:none;
+   padding: 0px;
+   font-size: 1.1rem;      
 }
 .color_gold{
-  color: #866d4b
+  color: #866d4b;
+  text-decoration: underline;  
+  
 }
