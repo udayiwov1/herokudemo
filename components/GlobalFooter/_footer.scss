@@ -19,6 +19,7 @@
 .footer-container .footer-container__properties-block .footer-container__properties-block__properties a {
   position: relative;
   display: inline-block;
+  margin-right: 15px;
   height: 70px;
 }
 
@@ -39,10 +40,10 @@
   content: '';
   position: absolute;
   top: 0;
-  right: -15%;
+  right: -11%;
   bottom: 0;
-  width: 2px;
-  background-color: #222222;
+  width: 1px;
+  background-color: #000000;
 }
 
 .footer-container .footer-container__properties-block .footer-container__properties-block__menus {
@@ -50,8 +51,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -95,8 +96,8 @@
 
 .footer-container .footer-container__copyright-block p {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   color: #FFF;
   font-size: 12px;
 }

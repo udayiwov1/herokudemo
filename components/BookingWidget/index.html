@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking Widget</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../site/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../site/dist/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> 
+  </head>
+  <body>
+
+    <section class="home-booking-widget">
+      <div class="">
+        <div class="template-container">
+          <div class="home-booking-widget__search_container">
+            <i class="fa fa-search"></i>
+            <input type="text" class="home-booking-widget__search_container_input gold_input" autocomplete="off" placeholder="Fraser Suites Le Claridge Champs Elysees, Paris" />
+          </div>
+          <div class="home-booking-widget__date_picker">
+            <input id="home_booking_calendar" type="text" class="home-booking-widget__search_container--date_input gold_input" placeholder="Thu, Jun 03 - Sat, Jun 05" name="daterangepicker" />
+          </div>
+          <div class="home-booking-widget__pax_selector">
+            <input type="text" class="home-booking-widget__pax-input gold_input" placeholder="1 Adult, 0 Children" />
+          </div>
+          <div class="home-booking-widget_check_rate">
+            <button class="btn btn-gold button-full-width">check rates</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      var vals=$('#home_booking_calendar').daterangepicker();
+          // console.log(vals);
+      $('input[name="daterangepicker"]').daterangepicker({
+        minDate:new Date()
+      });
+
+      $('.left').prepend('<span id="left"> check Availability </span>'); 
+      $('.right').prepend('<span id="right"> offer is not available on selected dates </span>'); 
+
+    })
+  
+  </script>
+</html>

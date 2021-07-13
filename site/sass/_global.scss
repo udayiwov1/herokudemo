@@ -16,11 +16,12 @@ body {
 	justify-content: space-between;
 }
 .grid-container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+  max-width: 1190px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .grid-row {
 	display: -webkit-box;
@@ -98,13 +99,15 @@ a {
 }
 .btn {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	border: 1px solid transparent;
 	margin: 0;
 	cursor: pointer;
 	text-transform: uppercase;
 	text-decoration: none;
-	font: normal normal normal 14px/17px 'Cormorant_Garamond-Regular';
+	font-family: 'Cormorant_Garamond-Regular';
+  font-size: 18px;
+  line-height: 23px;
 	letter-spacing: 0px;
 	&:disabled {
 		background-color: #DBDBDB;
@@ -135,31 +138,50 @@ a {
 	}
 }
 input {
-	width: 90%;
+  display: block;
 	padding: 5px 10px 10px 2px;
 	border-width: 0 0 1px 0;
-	font: normal normal medium 16px/40px 'Roboto-Regular';
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  line-height: 30px;
 	letter-spacing: 0px;
+  width: 100%;
+  color: #866D4B;
+  border-bottom-width: 2px;
+  border-bottom-color: #866D4B;
 	&::placeholder {
 		color: #866D4B;
+    font-family: 'Roboto-Regular';
 	}
+  &:focus{
+    outline: none;
+  }
 }
 select {
 	width: 90%;
 	padding: 5px 10px 10px 2px;
 	border-width: 0 0 1px 0;
-	font: normal normal medium 16px/40px 'Roboto-Regular';
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  line-height: 42px;
 	letter-spacing: 0px;
 }
 textarea {
 	width: 90%;
 	padding: 5px 10px 10px 2px;
 	border-width: 0 0 1px 0;
-	font: normal normal medium 16px/40px 'Roboto-Regular';
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  line-height: 42px;
 	letter-spacing: 0px;
+  color: #866D4B;
 	&::placeholder {
 		color: #866D4B;
+    font-family: 'Roboto-Regular';
 	}
+  &:focus{
+    outline: none;
+  }
 }
 .btn-optional {
 	border-color: #222222;
@@ -180,7 +202,9 @@ textarea {
 	border-color: #FFFFFF;
 	opacity: 1;
 	&:hover {
-		font: normal normal bold 14px/17px 'Cormorant_Garamond-Regular';
+  // font-family: 'Cormorant_Garamond-Regular';
+  // font-size: 14px;
+  // line-height: 17px;
 	}
 	&:acitve {
 		border-width: 2px;

@@ -1,0 +1,139 @@
+.home-booking-widget {
+  position: absolute;
+  bottom: 86px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 1152px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  font-family: 'Cormorant_Garamond-Medium';
+  text-transform: capitalize;
+  display: none;
+  &__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 auto;
+
+    &--search_container {
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      width: 40%;
+      > i.fa {
+        color: #866D4B;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+      &__input.gold_input {
+        border-color: #866D4B;
+        color: #aaa8a5;
+      }
+    }
+    &--date_input {
+      border-color: #866D4B;
+      color: #aaa8a5;
+      &--date_picker {
+        padding: 5px 10px;
+      }
+    }
+    &--pax_selector {
+      padding: 5px 10px;
+    }
+    &--check_rate {}
+  }
+
+}
+.disabled {
+	color: gray !important;
+	border: none !important;
+	text-transform: none !important;
+}
+.table-condensed {
+	margin-top: 10px !important;
+	background-color: #D9D9E2 !important;
+}
+
+.daterangepicker {
+  box-shadow: 0px 1px 10px 6px #00000029;
+	width: 670px !important;
+  background-color: #fff !important;
+  padding: 20px;
+  font-size: 16px;
+	> .calendar-table {
+    background-color: #fff !important;
+		> table {
+      background-color: #fff !important;
+			> tbody {
+        background-color: #fff !important;
+				> tr {
+					border: 1px solid white !important;
+          background-color: #fff !important;
+					> th,
+          td {
+						padding: 10px 7px !important;
+						border: none;
+            background-color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+  > .drp-calendar.left {
+      width: 49% !important;
+      > #left {
+        text-transform: uppercase;
+        margin-bottom: 15px !important;
+        color: #222222 !important;
+        font-size: 18px;
+      }
+    }
+  > .drp-calendar.right {
+      margin-left: 1% !important;
+      width: 49% !important;
+      padding: 0 !important;
+      > #right {
+        color: #B90000 !important;
+        font-size: 16px;
+      }
+    }
+}
+.weekend {
+	position: relative;
+	&:after {
+		position: absolute !important;
+		content: '';
+		left: 0px !important;
+		top: 6px !important;
+		margin-top: 11px !important;
+		width: 50px !important;
+		height: 2px !important;
+		background: black !important;
+		transform: rotate(-25deg);
+	}
+	&:before {
+		position: absolute !important;
+		content: '';
+		left: 0px !important;
+		top: 6px !important;
+		margin-top: 11px !important;
+		width: 50px !important;
+		height: 2px !important;
+		background: black !important;
+		transform: rotate(25deg);
+	}
+}
+.in-range {
+	background-color: #e9cea6 !important;
+	color: white !important;
+}
+.end-date {
+	background-color: #866D4B !important;
+}
+.start-date {
+	background-color: #866D4B !important;
+}

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frasers Hospitality</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../site/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../site/dependancies/OwlCarousel2/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../site/dependancies/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../site/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../site/css/daterangepicker.css" /> 
     <link rel="stylesheet" href="../../site/dist/custom.css">
   </head>
   <body>
@@ -61,15 +63,43 @@
       <!-- text-top-left, text-top-center, text-top-right, text-center-left, text-center-center,
         text-center-right, text-bottom-left, text-bottom-center, text-bottom-right,   -->
       <div class="hero-image-carousel__image-container">
-        <div class="owl-carousel owl-theme">
-          <div> <img src="../../resources/images/banner/FH_Banner1.png" alt=""> </div>
-          <!-- <div> <img src="../../resources/images/banner/slider2.png" alt=""> </div>
-          <div> <img src="../../resources/images/banner/slider3.png" alt=""> </div> -->
-        </div>            
-        <h1>A warm welcome home.</h1>
+          <div class="owl-carousel owl-theme">
+            <div> 
+              <img src="../../resources/images/banner/FH_Banner1.png" alt="">          
+              <h1>A warm welcome home.</h1>
+            </div>
+            <div> 
+              <img src="../../resources/images/banner/slider2.png" alt="">          
+              <h1>A warm welcome home.</h1>
+            </div>
+            <div> 
+              <img src="../../resources/images/banner/slider3.png" alt="">          
+              <h1>A warm welcome home</h1>
+            </div>
+          </div>   
       </div>
-    </section>   
+    </section>  
     <!-- hero carousel ends -->
+
+    <!-- booking widget starts -->
+    <section class="home-booking-widget">
+      <div class="home-booking-widget__container">
+        <div class="home-booking-widget__container--search_container">
+          <i class="fa fa-search"></i>
+          <input type="text" class="home-booking-widget__container--search_container_input gold_input" autocomplete="off" placeholder="Fraser Suites Le Claridge Champs Elysees, Paris" />
+        </div>
+        <div class="home-booking-widget__container--date_picker">
+          <input id="home_booking_calendar" type="text" class="home-booking-widget__container--date_picker--date_input gold_input" placeholder="Thu, Jun 03 - Sat, Jun 05" name="daterangepicker" />
+        </div>
+        <div class="home-booking-widget__container--pax_selector">
+          <input type="text" class="home-booking-widget__pax-input gold_input" placeholder="1 Adult, 0 Children" />
+        </div>
+        <div class="home-booking-widget__container--check_rate">
+          <button class="btn btn-gold button-full-width">check rates</button>
+        </div>
+      </div>
+    </section>
+    <!-- booking widget ends -->
 
     <!-- breadcrumbs starts -->
     <div class="grid-container">
@@ -89,7 +119,7 @@
               <meta itemprop="position" content="2">
             </li>
             <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active">
-              <span>Frasers Residence</span>
+              <span>Frasers Hospitality</span>
             </li>
           </ol>
         </nav>
@@ -109,9 +139,9 @@
     <section class="column-control column-width__fifty">
       <div class="grid-container">
         <div class="column-control__image mb-30">
-          <img src="../../resources/images/column-control/Group 3833.svg" />
-          <img src="../../resources/images/column-control/Group 3833.svg" />
-          <img src="../../resources/images/column-control/Group 3833.svg" />
+          <img src="../../resources/images/column-control/Group_3833.svg" />
+          <img src="../../resources/images/column-control/Group_3833.svg" />
+          <img src="../../resources/images/column-control/Group_3833.svg" />
         </div>
         <div class="column-control__text_title mb-30">
           <h4>worlds leading serviced apratments and hotel residences.</h4>
@@ -130,12 +160,12 @@
         <div class="grid-row">
           <div class="column fraser-world__image_container" style="background-image: url('../../resources/images/fraser-world/rectangle-1955@3x.png');"></div>
           <div class="column fraser-world__text_container padding-30">
-            <div class="column fraser-world__brands_showcase">
+            <div class="column fraser-world__brands_showcase mb-30">
               <img src="../../resources/images/fraser-world/Group 2900.png" alt="" class="fraser-world__brands_fraser_logo">
               <img src="../../resources/images/fraser-world/Group 2905.png" alt="" class="fraser-world__brands_fraser_logo">
             </div>
             <div class="column">  
-              <h4 class="fraser-world__title_text no-mt">A World of BENEFITS AWAITS <span>you</span></h4>
+              <p class="fraser-world__title_text no-mt">A World of BENEFITS AWAITS <span>you</span></p>
             </div>
             <div class="column fraser-world__iternary mt-30 mb-15">
               <span class="mb-30"><i class=""></i> Free Stays</span>
@@ -237,8 +267,69 @@
     </section>
     <!-- global footprint ends -->
 
+    <!-- image slider starts -->
+    <section class="banner-slider-container">
+      <div class="banner-slider-container__header">
+          <div></div>
+          <div>
+              <h2>FRASER <span>Difference</span></h2>
+              <p>
+                  Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora enim, nesciunt fugiat eos earum!
+              </p>
+          </div>
+          <div></div>
+      </div>
+      <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../../resources/images/image-slider/slider1.png" alt="slider1">
+                <div class="banner-slider-info">
+                  <h3>Award Winning Services</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../../resources/images/image-slider/slider2.png" alt="slider2">
+                <div class="banner-slider-info">
+                  <h3>Award Winning Services</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../../resources/images/image-slider/slider3.png" alt="slider3">
+                <div class="banner-slider-info">
+                  <h3>Award Winning Services</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../../resources/images/image-slider/slider4.png" alt="slider4">
+                <div class="banner-slider-info">
+                  <h3>Award Winning Services</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- image slider ends -->
+
     <!-- text over image starts -->
-    <div class="section-text-over-image_align_left ">
+    <div class="section-text-over-image_align_left mt-30">
       <section class="section-text-over-image">
         <img class="section-text-over-image__background_image" src="../../resources/images/textOverImage/BusinessTravel.png" alt="" />
         <div class="text-over-image__title_wrapper">
@@ -259,14 +350,14 @@
     <section class="footer-container">
       <div class="footer-container__properties-block">
         <div class="footer-container__properties-block__properties">
-          <a><img src="../../resources/images/brand_logo/FraserHospitality.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/FraserSuites.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/FraserResidence.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/FraserPlace.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/Capri.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/Modena.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/Malmaison.svg" alt=""></a>
-          <a><img src="../../resources/images/brand_logo/HotelduVin.svg" alt=""></a>
+          <a><img src="../../resources/images/footer_new/FraserHospitality.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/FraserSuites.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/FraserResidence.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/FraserPlace.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/Capri.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/Modena.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/Malmaison.png" alt=""></a>
+          <a><img src="../../resources/images/footer_new/HotelduVin.png" alt=""></a>
         </div>
         <div class="footer-container__properties-block__menus">
           <div class="footer-container__properties-block__menus__fmenus">                    
@@ -297,9 +388,15 @@
     <!-- footer ends -->
 
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../../site/dependancies/OwlCarousel2/dist/owl.carousel.min.js"></script>
+  <script src="../../site/js/jquery.min.js"></script>
+  <script src="../../site/dependancies/OwlCarousel2/dist/owl.carousel.min.js">
+  </script><script src="../../site/js/swiper-bundle.min.js"></script>  
+  <script type="text/javascript" src="../../site/js/moment.min.js"></script>
+  <script type="text/javascript" src="../../site/js/daterangepicker.min.js"></script>
+
   <script>
+
+    // banner carousel
     $(document).ready(function(){
       $('.hero-image-carousel__image-container .owl-carousel').owlCarousel({
         items:1,
@@ -312,10 +409,11 @@
       });
     });
     
+    // global header
     $(document).ready(function(){
       $('.global-footprint .owl-carousel').owlCarousel({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 4000,
         autoplayTimeout:4000,
         autoplayHoverPause:true,
         loop:true,
@@ -323,7 +421,71 @@
         nav:false,
         dots:false,
         items: 5,
+        mouseDrag: false
       });
-    });        
+    });
+    
+    $(function(){
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 110,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: { 
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    })
+
+    // gheader scroll fix
+    $(function(){
+
+      var lastScrollTop = 0, delta = 5;
+      $(window).scroll(function(){
+        var nowScrollTop = $(this).scrollTop();
+        if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+          if (nowScrollTop > lastScrollTop){
+            $(".global-header").css({
+              'position': 'relative'
+            });
+            $('body').removeAttr('style')
+          } else {
+            $(".global-header").css({
+              'position': 'fixed',
+              'top': 0,
+              'left': 0,
+              'right': 0,
+              'z-index': 9999
+            });
+            $('body').css({
+              'padding-top': '40px'
+            })
+          }
+          lastScrollTop = nowScrollTop;
+        }
+      });
+
+    })
+
+    // daterangepicker
+    // $(function(){
+    //   $('#home_booking_calendar').daterangepicker({
+    //     minDate:new Date(),
+    //     locale: {
+    //       format: 'dd, MM YY'
+    //     }
+    //   });
+
+    //   $('.left').prepend('<span id="left"> check Availability </span>'); 
+    //   $('.right').prepend('<span id="right"> Offer is not available on selected dates </span>'); 
+
+    // })
+
   </script>
 </html>
