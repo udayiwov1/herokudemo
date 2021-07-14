@@ -1582,3 +1582,30 @@ textarea:focus {
   width: 100px;
   border-radius: 0;
 }
+
+.desktop-image {
+  position: relative;
+}
+.desktop-image_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.desktop-image_container-image-section {
+  max-width: 100%;
+}
+.desktop-image_container-caption {
+  font-size: 1.1rem;
+  color: #866D4B;
+  font-family: "Cormorant_Garamond-Medium";
+}
+.desktop-image.single-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.bg-cream {
+  background-color: #F4F0ED;
+}

@@ -1,0 +1,27 @@
+.desktop-image{
+  position: relative;
+  &_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &-image-section{
+      max-width: 100%;
+    }
+    &-caption{
+      font-size: 1.1rem;
+      color: #866D4B;
+      font-family: "Cormorant_Garamond-Medium";
+    }
+  }
+  
+  &.single-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+}
+
+.bg-cream{
+  background-color: #F4F0ED;
+}
