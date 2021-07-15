@@ -43,7 +43,7 @@
 		font-style: normal;
 		letter-spacing: normal;
 		font-family: 'Cormorant_Garamond-Medium';
-		line-height: 45px;
+    	line-height: 68px;
 		&::after {
 			content: '';
 			position: absolute;
@@ -52,16 +52,6 @@
 			right: 0;
 			height: 2px;
 			background-image: url('../../resources/images/fraser-world/line-648@2x.png');
-		}
-		span {
-			display: inline-block;
-			font-size: 90px;
-			font-weight: normal;
-			font-family: 'Sebastian-Boby-Alt';
-			text-transform: lowercase;
-			position: relative;
-			top: 15px;
-			left: 10px;
 		}
 	}
 }
@@ -75,4 +65,14 @@
     font-style: normal;
     opacity: 0.8;
   }
+}
+.you-bulge {
+  display: inline-block;
+  font-size: 90px;
+  font-weight: normal;
+  font-family: 'Sebastian-Boby-Alt';
+  text-transform: lowercase;
+  position: relative;
+  top: 15px;
+  left: 10px;
 }

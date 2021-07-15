@@ -876,7 +876,6 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -892,7 +891,6 @@ textarea:focus {
   font-style: normal;
   line-height: 60px;
   letter-spacing: normal;
-  text-align: center;
   color: #222222;
 }
 .section-text-over-image .text-over-image__title_wrapper .text-over-image__desc p {
@@ -902,18 +900,44 @@ textarea:focus {
   font-style: normal;
   line-height: 25px;
   letter-spacing: normal;
-  text-align: center;
   color: #5f5f5f;
 }
 .section-text-over-image .text-over-image__title_wrapper .section-text-over-image__action_link {
   font-family: "Cormorant_Garamond-Regular";
   margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.section-text-over-image_align_left.text_align-left .text-over-image__title,
+.section-text-over-image_align_left.text_align-left .text-over-image__desc {
+  text-align: left;
+}
+.section-text-over-image_align_left.text_align-right .text-over-image__title,
+.section-text-over-image_align_left.text_align-right .text-over-image__desc {
+  text-align: right;
+}
+.section-text-over-image_align_left.text_align-center .text-over-image__title,
+.section-text-over-image_align_left.text_align-center .text-over-image__desc {
+  text-align: center;
+}
 .section-text-over-image_align_left .section-text-over-image .text-over-image__title_wrapper {
   left: 0;
 }
 
+.section-text-over-image_align_right.text_align-right .text-over-image__title,
+.section-text-over-image_align_right.text_align-right .text-over-image__desc {
+  text-align: right;
+}
+.section-text-over-image_align_right.text_align-left .text-over-image__title,
+.section-text-over-image_align_right.text_align-left .text-over-image__desc {
+  text-align: left;
+}
+.section-text-over-image_align_right.text_align-center .text-over-image__title,
+.section-text-over-image_align_right.text_align-center .text-over-image__desc {
+  text-align: center;
+}
 .section-text-over-image_align_right .section-text-over-image .text-over-image__title_wrapper {
   right: 0;
 }
@@ -1042,7 +1066,7 @@ textarea:focus {
   font-style: normal;
   letter-spacing: normal;
   font-family: "Cormorant_Garamond-Medium";
-  line-height: 45px;
+  line-height: 68px;
 }
 .fraser-world__text_container .fraser-world__title_text::after {
   content: "";
@@ -1052,16 +1076,6 @@ textarea:focus {
   right: 0;
   height: 2px;
   background-image: url("../../resources/images/fraser-world/line-648@2x.png");
-}
-.fraser-world__text_container .fraser-world__title_text span {
-  display: inline-block;
-  font-size: 90px;
-  font-weight: normal;
-  font-family: "Sebastian-Boby-Alt";
-  text-transform: lowercase;
-  position: relative;
-  top: 15px;
-  left: 10px;
 }
 
 .fraser-world__iternary {
@@ -1076,6 +1090,17 @@ textarea:focus {
   opacity: 0.8;
 }
 
+.you-bulge {
+  display: inline-block;
+  font-size: 90px;
+  font-weight: normal;
+  font-family: "Sebastian-Boby-Alt";
+  text-transform: lowercase;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
 .column-control {
   padding: 3%;
   display: flex;
@@ -1084,18 +1109,11 @@ textarea:focus {
   align-items: center;
   text-align: center;
 }
-
-.column-control .column-control__image img {
-  margin-right: 15px;
+.column-control.two-column-fifty_section {
+  flex-direction: row;
 }
 
-.column-control__text_title h4 {
-  font-family: "Cormorant_Garamond-Regular";
-  text-transform: capitalize;
-  font-size: 28px;
-}
-
-.column-control__text_title .yours_style {
+.you-flat {
   display: inline-block;
   font-size: 90px;
   font-weight: normal;
@@ -1106,6 +1124,16 @@ textarea:focus {
   left: 10px;
   line-height: 33px;
   margin-right: 10px;
+}
+
+.column-control .column-control__image img {
+  margin-right: 15px;
+}
+
+.column-control__title-container-text-title {
+  font-family: "Cormorant_Garamond-Regular";
+  text-transform: capitalize;
+  font-size: 28px;
 }
 
 .column-control__text_desc {
@@ -1120,6 +1148,73 @@ textarea:focus {
 .color_gold {
   color: #866d4b;
   text-decoration: underline;
+}
+
+.columns-50-50 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.columns-50-50 .controlled-columns__left {
+  background-color: #757575;
+}
+.columns-50-50 .controlled-columns__right {
+  background-color: #D3EAFD;
+}
+
+.columns-70-30 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.columns-70-30 .controlled-columns__left {
+  background-color: #757575;
+}
+.columns-70-30 .controlled-columns__right {
+  background-color: #D3EAFD;
+}
+
+.columns-30-70 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.columns-30-70 .controlled-columns__left {
+  background-color: #757575;
+}
+.columns-30-70 .controlled-columns__right {
+  background-color: #D3EAFD;
+}
+
+.columns-three {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.columns-three .controlled-columns__one {
+  background-color: #757575;
+}
+.columns-three .controlled-columns__two {
+  background-color: #D3EAFD;
+}
+.columns-three .controlled-columns__three {
+  background-color: #757575;
+}
+
+.columns-five {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.columns-five .controlled-columns__one {
+  background-color: #757575;
+}
+.columns-five .controlled-columns__two {
+  background-color: #D3EAFD;
+}
+.columns-five .controlled-columns__three {
+  background-color: #757575;
+}
+.columns-five .controlled-columns__four {
+  background-color: #D3EAFD;
+}
+.columns-five .controlled-columns__five {
+  background-color: #757575;
 }
 
 .footer-container .footer-container__properties-block {
@@ -1608,4 +1703,65 @@ textarea:focus {
 
 .bg-cream {
   background-color: #F4F0ED;
+}
+
+.image {
+  position: relative;
+}
+.image.image-text_left {
+  text-align: left;
+}
+.image.image-text_right {
+  text-align: right;
+}
+.image.image-text_center {
+  text-align: center;
+}
+.image .cmp-image {
+  display: flex;
+  flex-direction: column;
+}
+.image .cmp-image__image {
+  width: 100%;
+  height: auto;
+}
+.image .cmp-image__title {
+  font-size: 1.1rem;
+  color: #866D4B;
+  font-family: "Cormorant_Garamond-Medium";
+  display: block;
+}
+
+.property-page_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.property-page_section_banner_section-image {
+  max-width: 100%;
+  height: 100%;
+}
+.property-page_section-search_container {
+  position: absolute;
+  bottom: 86px;
+  width: 600px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  font-family: "Cormorant_Garamond-Medium";
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.property-page_section-search_container-input_container {
+  margin-left: 15px;
+  width: 100%;
+}
+.property-page_section-search_container-input_container-input {
+  margin-bottom: 10px;
 }

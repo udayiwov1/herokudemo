@@ -10,7 +10,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -25,7 +24,6 @@
 			font-style: normal;
 			line-height: 60px;
 			letter-spacing: normal;
-			text-align: center;
 			color: #222222;
 		}
 		.text-over-image__desc {
@@ -36,7 +34,6 @@
 				font-style: normal;
 				line-height: 25px;
 				letter-spacing: normal;
-				text-align: center;
 				color: #5f5f5f;
 				
 			}
@@ -44,10 +41,32 @@
 		.section-text-over-image__action_link {
 			font-family: 'Cormorant_Garamond-Regular';
 			margin-top: 20px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
 		}
 	}
 }
+
 .section-text-over-image_align_left {
+  &.text_align-left{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: left;
+    }
+  }
+  &.text_align-right{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: right;
+    }
+  }
+  &.text_align-center{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: center;
+    }
+  }
 	.section-text-over-image {
 		.text-over-image__title_wrapper {
 			left: 0;
@@ -55,6 +74,24 @@
 	}
 }
 .section-text-over-image_align_right {
+  &.text_align-right{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: right;
+    }
+  }
+  &.text_align-left{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: left;
+    }
+  }
+  &.text_align-center{
+    .text-over-image__title ,
+    .text-over-image__desc {
+      text-align: center;
+    }
+  }
 	.section-text-over-image {
 		.text-over-image__title_wrapper {
 			right: 0;

@@ -1,0 +1,42 @@
+.property-page{
+  &_section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		&_banner_section{
+			&-image{
+				max-width: 100%;
+				height: 100%;
+			}
+			&-title_container{
+				&-text{
+
+				}
+			}
+		}	
+		&-search_container{
+			position: absolute;
+			bottom: 86px;
+			width: 600px;
+			background-color: #fff;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 99;
+			font-family: 'Cormorant_Garamond-Medium';
+			text-transform: capitalize;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&-input_container{
+				margin-left: 15px;
+				width: 100%;
+				&-input{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
