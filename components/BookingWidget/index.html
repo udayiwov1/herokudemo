@@ -7,34 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../site/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../site/dist/custom.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> 
+    <link rel="stylesheet" type="text/css" href="../../site/css/daterangepicker.css" /> 
   </head>
   <body>
 
     <section class="home-booking-widget">
-      <div class="">
-        <div class="template-container">
-          <div class="home-booking-widget__search_container">
-            <i class="fa fa-search"></i>
-            <input type="text" class="home-booking-widget__search_container_input gold_input" autocomplete="off" placeholder="Fraser Suites Le Claridge Champs Elysees, Paris" />
+      <div class="template-container">
+        <div class="home-booking-widget_section">
+          <div class="home-booking-widget_section-top">
+            <div class="home-booking-widget_section-top__search_container">
+              <i class="fa fa-search"></i>
+              <input type="text" class="home-booking-widget_section-top__search_container_input gold_input" autocomplete="off" placeholder="Fraser Suites Le Claridge Champs Elysees, Paris" />
+            </div>
+            <div class="home-booking-widget_section-top__date_picker">
+              <input id="home_booking_calendar" type="text" class="home-booking-widget_section-top__search_container--date_input gold_input" placeholder="Thu, Jun 03 - Sat, Jun 05" name="daterangepicker" />
+            </div>
+            <div class="home-booking-widget_section-top__pax_selector">
+              <input type="text" class="home-booking-widget_section__pax-input gold_input" placeholder="1 Adult, 0 Children" />
+            </div>
+            <div class="home-booking-widget_section-top__check_rate">
+              <button class="btn btn-gold button-full-width">check rates</button>
+            </div>
           </div>
-          <div class="home-booking-widget__date_picker">
-            <input id="home_booking_calendar" type="text" class="home-booking-widget__search_container--date_input gold_input" placeholder="Thu, Jun 03 - Sat, Jun 05" name="daterangepicker" />
-          </div>
-          <div class="home-booking-widget__pax_selector">
-            <input type="text" class="home-booking-widget__pax-input gold_input" placeholder="1 Adult, 0 Children" />
-          </div>
-          <div class="home-booking-widget_check_rate">
-            <button class="btn btn-gold button-full-width">check rates</button>
+          <div class="home-booking-widget_section-bottom">
+            <div class="home-booking-widget_section-bottom_">
+
+            </div>
           </div>
         </div>
       </div>
     </section>
 
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="../../site/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../../site/js/moment.min.js"></script>
+  <script type="text/javascript" src="../../site/js/daterangepicker.min.js"></script>
   <script type="text/javascript">
     $(function(){
       var vals=$('#home_booking_calendar').daterangepicker();

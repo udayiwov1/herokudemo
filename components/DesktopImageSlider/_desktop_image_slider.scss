@@ -1,8 +1,9 @@
 .banner-slider-container {
     .banner-slider-container__header{
-        display: grid;
-        grid-template-columns: 25% 50% 25%;
-        //padding: 20px 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 30px;
         h2{
             font-family: 'Cormorant_Garamond-SemiBold';
