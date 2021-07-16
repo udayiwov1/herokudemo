@@ -53,16 +53,6 @@
 			height: 2px;
 			background-image: url('../../resources/images/fraser-world/line-648@2x.png');
 		}
-		span {
-			display: inline-block;
-			font-size: 90px;
-			font-weight: normal;
-			font-family: 'Sebastian-Boby-Alt';
-			text-transform: lowercase;
-			position: relative;
-			top: 15px;
-			left: 10px;
-		}
 	}
 }
 .fraser-world__iternary {
@@ -70,9 +60,12 @@
 	justify-content: space-around;
 	font-family: 'Roboto-Medium';
   > span{
-    font-weight: 500;
+	font-size: 14px;
+    font-family: 'Roboto-Medium';
+    // font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     opacity: 0.8;
+	  color: #FFFFFF;
   }
 }

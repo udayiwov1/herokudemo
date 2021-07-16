@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Image Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../site/dist/custom.css">
+</head>
+<body>
+    <section class="banner-slider-container">
+      <div class="banner-slider-container__header">
+        <h2>FRASER <span class="sebastian-bobby2">Difference</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora enim, nesciunt fugiat eos earum!
+        </p>
+      </div>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="../../resources/images/image-slider/islider1.png" alt="slider1">
+              <div class="banner-slider-info">
+                <h3>Award Winning Services</h3>
+                <p>
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/islider2.png" alt="slider2">
+              <div class="banner-slider-info">
+                <h3>Award Winning Services</h3>
+                <p>
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/islider3.png" alt="slider3">
+              <div class="banner-slider-info">
+                <h3>Award Winning Services</h3>
+                <p>
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/slider4.png" alt="slider4">
+              <div class="banner-slider-info">
+                <h3>Award Winning Services</h3>
+                <p>
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 110,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: { 
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>

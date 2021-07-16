@@ -25,3 +25,30 @@
 .bg-cream{
   background-color: #F4F0ED;
 }
+
+.image{
+  position: relative;
+  &.image-text_left{
+    text-align: left;
+  }
+  &.image-text_right{
+    text-align: right;
+  }
+  &.image-text_center{
+    text-align: center;
+  }
+  .cmp-image{
+    display: flex;
+    flex-direction: column;
+    &__image{
+      width: 100%;
+      height: auto;
+    }
+    &__title{
+      font-size: 1.1rem;
+      color: #866D4B;
+      font-family: "Cormorant_Garamond-Medium";    
+      display: block;
+    }
+  }
+}

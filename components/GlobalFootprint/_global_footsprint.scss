@@ -7,18 +7,22 @@
       .global-footprint-header {
           margin-bottom: 10px;
           display: flex;
-          p:nth-child(1) {                   
-              font-size: 28px;
-              font-weight: 500;  
-              margin: auto;
-              font-family: 'Cormorant_Garamond-Medium';      
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          h2 {  
+            font-size: 36px;
+            font-weight: 500;
+            font-family: "Cormorant_Garamond-Medium";
+            color: #222222;
           }
           p.global-footprint-veiwmore {
-              font-family: 'Roboto-Regular';
-              font-size: 14px;
-              font-weight: 400;
-              color: #866d4b;         
-              margin-top: 5px; 
+            font-family: "Cormorant_Garamond-SemiBold";
+            font-size: 16px;
+            font-weight: 400;
+            color: #866d4b;
+            position: absolute;
+            right: 15px;
           }
       }
   }
@@ -67,22 +71,27 @@
               p {
                   text-align: center;
                   margin: 10px;
-                  padding: 0 25px;
-                  font-family: 'Roboto-Regular';
+                  padding: 0 20px;                  
               }
               .country-city {
                   font-size: 18px;
                   font-weight: 400;
+                  font-family: 'Cormorant_Garamond-Medium';
               }
               .properties-list {                    
-                  font-size: 14px;
+                  font-size: 12px;
                   display: none;
                   text-decoration: underline;
                   text-underline-offset: 6px;
+                  line-height: 1.6;
                   p {
                       margin: 10px 0;
-                      font-family: 'Cormorant_Garamond-Medium';
+                      font-family: 'Roboto-Regular';
                   }
+              }
+              .properties-no {
+                    font-family: 'Roboto-Regular';
+                    font-size: 12px;
               }
           }
       }

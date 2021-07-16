@@ -1,0 +1,80 @@
+.banner-slider-container {
+  .banner-slider-container__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    h2 {
+      font-family: 'Cormorant_Garamond-Medium';
+      font-weight: 500;
+      text-align: center;
+      font-size: 36px;
+      color: #222222;
+    }
+    p {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      text-align: center;
+      margin: 0 25%;
+      color: #515151;
+    }
+
+  }
+
+    .swiper-container {
+        height: 580px;
+        padding: 10px 0 10px 0;
+        .swiper-wrapper {
+            align-items: center;
+            .swiper-slide {
+                //width: 775px;
+                width: 600px;
+                height: 440px;
+                img {
+                    opacity: 0.5;
+                    width: 600px;
+                    margin-bottom: -5px;
+                } 
+                .banner-slider-info{
+                    background-color: #dbdbdb;
+                    padding: 20px;
+                    display: none;
+                }
+                .banner-slider-info h3, p {
+                    text-align: center;
+                    font-family: 'Cormorant_Garamond-Regular';
+                    ///align-items: center;
+                }       
+                .banner-slider-info h3 {
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }  
+                .banner-slider-info p {
+                    font-size: 12px;
+                    padding: 0 40px;
+                }   
+            }
+            .swiper-slide-active {
+                transform: scale(1.3);
+                transition: .4s;
+                img {                    
+                    opacity: 1;
+                }
+                .banner-slider-info {
+                    display: block;
+                }
+            }
+        }
+
+        .swiper-pagination {
+
+            .swiper-pagination-bullet {
+                width: 100px;
+                border-radius: 0;
+            }
+
+        }
+        
+    }
+}
