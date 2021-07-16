@@ -122,11 +122,17 @@ a{
 input,
 select,
 textarea{
-  width: 90%;
-  padding: 5px 10px 10px 2px;
-  border-width: 0 0 1px 0; 
-  font: normal normal medium 16px/40px 'Roboto-Regular';
+  display: block;
+  padding: 5px 10px 5px 2px;
+  border-width: 0 0 1px 0;
+  font-family: "Roboto-Regular";
+  font-size: 15px;
+  line-height: 30px;
   letter-spacing: 0px;
+  width: 100%;
+  color: #866D4B;
+  border-bottom-width: 2px;
+  border-bottom-color: #866D4B;
 }
 input::placeholder,
 textarea::placeholder{

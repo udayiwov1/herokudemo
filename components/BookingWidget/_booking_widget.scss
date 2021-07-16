@@ -1,36 +1,30 @@
 .home-booking-widget {
-  // position: absolute;
-  // bottom: 86px;
-  // left: 0;
-  // right: 0;
-  // margin-left: auto;
-  // margin-right: auto;
   z-index: 99;
   font-family: 'Cormorant_Garamond-Medium';
   text-transform: capitalize;
   &_section{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
-    position: absolute;
-    bottom: 88px;
+    @extend .p-absolute;
+    bottom: 13%;
     left: 0;
     right: 0;
     z-index: 99;
-    width: 1140px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     &-top{
-      display: flex;
-      justify-content: center;
-      align-items: center;    
+      @extend .d-flex;
+      @extend .justify-content-center;
+      @extend .align-items-center;
       width: 100%;
       &__search_container{
-        display: flex;
-        align-items: center;    
+        @extend .d-flex;
+        @extend .align-items-center; 
         width: 42%;
         margin-right: 1%;
         i.fa {
@@ -39,7 +33,6 @@
           font-size: 16px;
         }
         &_input{
-          padding: 5px 10px;
           &__input.gold_input {
             border-color: #866D4B;
             color: #aaa8a5;
@@ -119,7 +112,7 @@
     }
 }
 .weekend {
-	position: relative;
+  @extend .p-relative;
 	&:after {
 		position: absolute !important;
 		content: '';

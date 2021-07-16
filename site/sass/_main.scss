@@ -1,6 +1,7 @@
 @import "global";
 @import "fonts";
 @import "icons";
+@import "variables";
 
 @import '../../components/GlobalHeader/globalheader';
 @import '../../components/PrimaryHeader/primary_nav';
@@ -18,5 +19,7 @@
 @import '../../components/DesktopImageSlider/desktop_image_slider';
 
 @import '../../components/DesktopImage/desktop_image';
+@import '../../components/ArticleHighlight/article_highlight';
+@import '../../components/OfferHighLights/offer_highlights';
 
 

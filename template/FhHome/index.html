@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../site/dependancies/OwlCarousel2/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../../site/css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="../../site/css/daterangepicker.css" /> 
+    <link rel="stylesheet" href="../../site/js/aos.css" />
     <link rel="stylesheet" href="../../site/dist/custom.css">
   </head>
   <body>
@@ -48,7 +49,7 @@
           </ul>
         </div>
         <div class="primary-nav__hamburger_container">
-          <button class="btn no-padding full-width">
+          <button class="btn p-0 full-width">
             <span></span>
             <span></span>
             <span></span>
@@ -64,16 +65,10 @@
         text-center-right, text-bottom-left, text-bottom-center, text-bottom-right,   -->
       <div class="hero-image-carousel__image-container">
         <div class="owl-carousel owl-theme">
-          <!-- <div class="item active"> 
-            <div class="image-box">
-              <img src="../../resources/images/banner/FH_Banner1.png" alt="" />   
-            </div>       
-            <h1>A warm welcome home.</h1>
-          </div> -->
           <div class="item active"> 
             <div class="image-box">
               <img src="../../resources/images/banner/FH_Banner1.png" alt="" loading="lazy" />   
-            </div>       
+            </div>     
             <h1>A warm welcome home.</h1>
           </div>
         </div>   
@@ -83,7 +78,7 @@
 
     <!-- booking widget starts -->
     <section class="home-booking-widget">
-      <div class="template-container">
+      <div class="grid-container">
         <div class="home-booking-widget_section">
           <div class="home-booking-widget_section-top">
             <div class="home-booking-widget_section-top__search_container">
@@ -109,8 +104,8 @@
     <!-- booking widget ends -->
 
     <!-- breadcrumbs starts -->
-    <div class="grid-container">
-      <div class="breadcrumb mt-15 mb-15">
+    <div class="breadcrumb mt-15 mb-15">
+      <div class="grid-container">
         <nav class="cmp-breadcrumb">
           <ol class="cmp-breadcrumb__list">
             <li class="cmp-breadcrumb__item">
@@ -136,7 +131,7 @@
 
     <!-- hashtag alert starts -->
     <div class="hashtag-alert-fixed"><a href="#">#Frasercares - covid - 19</a></div>
-  <!-- hashtag alert ends -->
+    <!-- hashtag alert ends -->
 
     <!-- chat icon starts -->
     <div  class="chat-icon"><img src="../../resources/images/banner/chat.png" alt="chat"></div>
@@ -162,25 +157,27 @@
     <!-- column ends -->
 
     <!-- Fraser World starts -->
-    <section class="fraser-world bg-grey padding-top-50 padding-bottom-50">
+    <section class="fraser-world bg-grey image_align_right pt-50 pb-50">
       <div class="grid-container">
-        <div class="grid-row">
-          <div class="column fraser-world__image_container" style="background-image: url('../../resources/images/fraser-world/rectangle-1955@3x.png');"></div>
-          <div class="column fraser-world__text_container padding-30">
-            <div class="column fraser-world__brands_showcase mt-15">
-              <img src="../../resources/images/fraser-world/Group 2900.png" alt="" class="fraser-world__brands_fraser_logo">
-              <img src="../../resources/images/fraser-world/Group 2905.png" alt="" class="fraser-world__brands_fraser_logo">
+        <div class="fraser-world__container">
+          <div class="fraser-world__container--image_container">
+            <img src="../../resources/images/fraser-world/rectangle-1955@3x.png" alt="" loading=lazy class="fraser-world__container--image_container-image">
+          </div>
+          <div class="fraser-world__container__text_container p-30">
+            <div class="fraser-world__container__text_container__brands_showcase mt-15">
+              <img src="../../resources/images/fraser-world/Group 2900.png" alt="" class="fraser-world__container__text_container__brands_showcase--fraser_logo">
+              <img src="../../resources/images/fraser-world/Group 2905.png" alt="" class="fraser-world__container__text_container__brands_showcase--fraser_logo">
             </div>
-            <div class="column mt-15">  
-              <h4 class="fraser-world__title_text no-mt">A World of BENEFITS AWAITS <span class="sebastian-boby-alt">you</span></h4>
+            <div class="fraser-world__container__text_container_title-container mt-15">  
+              <span class="fraser-world__container__text_container_title-container--title_text no-mt">A World of BENEFITS AWAITS <span class="sebastian-boby-alt">you</span></span>
             </div>
-            <div class="column fraser-world__iternary mt-30">
-              <span class="mb-30"><i class=""></i> Free Stays</span>
-              <span class="mb-30"><i class=""></i> E-shopping vouchers</span>
-              <span class="mb-30"><i class=""></i> Late check-out</span>
+            <div class="fraser-world__container__iternary mt-30">
+              <span class="mb-30"> Free Stays</span>
+              <span class="mb-30"> E-shopping vouchers</span>
+              <span class="mb-30"> Late check-out</span>
               <span class="mb-30"><a class="color-light-grey" href="#">And more...</a></span>
             </div>
-            <div class="column full-width">
+            <div class="fraser-world__container--join_link full-width">
               <a href="#" class="btn btn-inverse">join now</a>
             </div>
           </div>
@@ -274,48 +271,145 @@
     </section>
     <!-- global footprint ends -->
 
-    <!-- image slider starts -->
-    <section class="banner-slider-container pt-30 mb-30">
-      <div class="banner-slider-container__header">
-        <div></div>
-        <div>
-          <h2>FRASER <span class="sebastian-boby2">Difference</span></h2>
-          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora enim, nesciunt fugiat eos earum!</p>
-        </div>
-        <div></div>
+    <!-- offer highlghts starts -->
+    <section class="offer-display-home-page">
+      <div class="offer-item1">
+        <h2>FIND PERFECT DEALS IN PERFECT LOCATIONS</h2>
+        <p class="offer-enjoy">Enjoy a great deal more when you book direct</p>
+        <p class="view-all-offers">View All Offers</p>
       </div>
-      <div class="grid-container">
+      <div class="offer-item2">            
+        <img src="../../resources/images/offer-display/one.png" alt="offer-1">
+        <div class="overlay"></div>
+        <div class="offer-details">
+            <h4>Fraser World Member Exclusive</h4>
+            <p class="vd">View Details</p>
+            <div class="prize-details">
+                <div class="prize">
+                    <div class="from">
+                        <p class="from-p">FROM</p>
+                        <p class="from-prize">S&#36; 68</p>
+                    </div>
+                    <div class="members-only">
+                        <p class="members">MEMBERS ONLY</p>
+                        <p class="members-prize">S&#36; 35</p>
+                    </div>
+                </div>
+                <div class="booking-button">
+                    <a href="#" class="a-booking-button"> BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+          
+      </div>
+      <div class="offer-item3">
+          <img src="../../resources/images/offer-display/two.png" alt="offer-2">
+          <div class="overlay"></div>
+          <div class="offer-details">
+              <h4>Sweet Dreams & Breakfast</h4>
+              <p class="vd">View Details</p>
+              <div class="prize-details">
+                  <div class="prize">
+                      <div class="from">
+                          <p class="from-p">FROM</p>
+                          <p class="from-prize">S&#36; 68</p>
+                      </div>
+                      <div class="members-only">
+                          <p class="members">MEMBERS ONLY</p>
+                          <p class="members-prize">S&#36; 35</p>
+                      </div>
+                  </div>
+                  <div class="booking-button">
+                      <a href="#" class="a-booking-button"> BOOK NOW</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="offer-item4">
+        <img src="../../resources/images/offer-display/three.png" alt="offer-3">
+        <div class="overlay"></div>
+        <div class="offer-details">
+          <h4>9 to 5 Special</h4>
+          <p class="vd">View Details</p>
+          <div class="prize-details">
+            <div class="prize">
+              <div class="from">
+                <p class="from-p">FROM</p>
+                <p class="from-prize">S&#36; 68</p>
+              </div>
+            </div>
+            <div class="booking-button">
+              <a href="#" class="a-booking-button"> BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offer-item5">
+          <img src="../../resources/images/offer-display/four.png" alt="offer-4">
+          <div class="overlay"></div>
+          <div class="offer-details">
+              <h4>60 Days Advanced Purchase</h4>
+              <p class="vd">View Details</p>
+              <div class="prize-details">
+                  <div class="prize">
+                      <div class="from">
+                          <p class="from-p">FROM</p>
+                          <p class="from-prize">S&#36; 68</p>
+                      </div>
+                  </div>
+                  <div class="booking-button">
+                      <a href="#" class="a-booking-button"> BOOK NOW</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- offer highlghts ends -->
+
+    <!-- image slider starts -->
+    <section class="banner-slider-container">
+      <div class="banner-slider-container__header mt-50">
+      <div>
+        <h2>FRASER <span class="sebastian-boby2">Difference</span></h2>
+        <p>The epitome of the countless awards and accolades we have garnered to date is our attention to detail which distinguishes Frasers Hospitality from the rest. Every customer’s touchpoint and encounter are met with service intuition and memorable experiences that has become our trademark.</p>
+      </div>
+      </div>
+      <div class="grid-container mb-50">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="../../resources/images/image-slider/slider1.png" alt="slider1">
+              <img src="../../resources/images/banner/proxyclick-visitor-management-system-ZRC0Hj_2kY0-unsplash@2x.png" alt="slider1">
               <div class="banner-slider-info">
                 <h3>Award Winning Services</h3>
-                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>No detail is too small; no hour too late. 
+                  It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="../../resources/images/image-slider/slider2.png" alt="slider2">
+              <img src="../../resources/images/image-slider/Fraser_difference.png" alt="slider2">
               <div class="banner-slider-info">
                 <h3>Award Winning Services</h3>
-                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>No detail is too small; no hour too late. 
+                  It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="../../resources/images/image-slider/slider3.png" alt="slider2">
+              <img src="../../resources/images/image-slider/islider3.png" loading="lazy" />
               <div class="banner-slider-info">
                 <h3>Award Winning Services</h3>
-                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>No detail is too small; no hour too late. 
+                  It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="../../resources/images/image-slider/slider2.png" alt="slider2">
+              <img src="../../resources/images/image-slider/islider2.png" alt="slider2" loading="lazy" />
               <div class="banner-slider-info">
                 <h3>Award Winning Services</h3>
-                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>No detail is too small; no hour too late. 
+                  It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
                 </p>
               </div>
             </div>
@@ -331,15 +425,15 @@
     <!-- image slider ends -->
 
     <!-- text over image starts -->
-    <div class="section-text-over-image_align_left pt-30 mt-30">
+    <div class="section-text-over-image_align_left text_align_center mt-50">
       <section class="section-text-over-image">
         <img class="section-text-over-image__background_image" src="../../resources/images/textOverImage/BusinessTravel.png" alt="" />
         <div class="text-over-image__title_wrapper">
           <h3 class="text-over-image__title">business travel</h3>
           <div class="text-over-image__desc">
             <p>
-            Join our corporate programme and take advantage of the great benefits at more than 120 
-            serviced apratments and hotel residence across Asia, Europe, Middle East and Africa
+              Join our corporate programme and take advantage of the great benefits at more than 120 
+              serviced apratments and hotel residence across Asia, Europe, Middle East and Africa
             </p>
           </div>
           <a class="btn btn-optional section-text-over-image__action_link" href="#.">learn more</a>
@@ -348,45 +442,223 @@
     </div>
     <!-- text over image ends -->
 
+    <!-- article insights starts -->
+    <section class="article_highlight mt-50 mb-50">
+
+      <div class="grid-container">
+         <div class="article_highlight__heading--container">
+            <div class="article_highlight__heading--container_title-container">
+              <p data-aos="fade-right">Inspire Your Wanderlust</p>
+              <p class="float-right">Explore More Stories</p>
+            </div>
+            <div class="article_highlight__heading--container_description"  data-aos="fade-up">
+              <p>More than just your usual travel guide, Fraser Moments is thoughtfully curated with our guests, 
+                staff and interesting personalities from all over the world to bring you unique and local travel experiences.
+              </p>
+            </div>
+         </div>
+      </div>
+      <div class="grid-container">
+         <div class="article_highlight_content mt-30">
+            <div class="article_highlight_content--card">
+               <div class="article_highlight_content--card--image-container">
+                  <img class="article_highlight_content--card--image-container-img" src="../../resources/images/article_highlights/Train Journey_Cover.png" loading="lazy" alt="">
+               </div>
+               <ul class="article_highlight_content--card__tag-container">
+                  <li class="article_highlight_content--card__tag-container--list">Experiences</li>
+                  <li class="article_highlight_content--card__tag-container--list">Guide</li>
+                  <li class="article_highlight_content--card__tag-container--list">Culture</li>
+               </ul>
+               <div class="article_highlight_content--card_header">
+                  <p>Rail Journeys to Remember</p>
+               </div>
+               <div class="article_highlight_content--card_text">
+                  <p>Travelling by train when on holiday can be fast and furious or languid and leisurely.</p>
+               </div>
+               <div class="article_highlight_content--card_more">
+                  <a href="#">Read More</a>
+               </div>
+            </div>
+            <div class="article_highlight_content--card">
+               <div class="article_highlight_content--card--image-container">
+                  <img class="article_highlight_content--card--image-container-img" src="../../resources/images/article_highlights/Omoide Yokocho - kenn-reynon-EOTRfWbIhiE-unsplash.png" loading="lazy" alt="">
+               </div>
+               <ul class="article_highlight_content--card__tag-container">
+                  <li class="article_highlight_content--card__tag-container--list">Experiences</li>
+                  <li class="article_highlight_content--card__tag-container--list">Guide</li>
+                  <li class="article_highlight_content--card__tag-container--list">Culture</li>
+               </ul>
+               <div class="article_highlight_content--card_header">
+                  <p>Rediscovering Your City: Best of Tokyo, Rediscovering Your City: Best of Tokyo</p>
+               </div>
+               <div class="article_highlight_content--card_text">
+                  <p>Famed for its culture, cuisine, fashion and entertainment, the vibrant capital of Japan is without the most exciting cities, the vibrant capital of Japan is without the most exciting cities.</p>
+               </div>
+               <div class="article_highlight_content--card_more">
+                  <a href="#">Read More</a>
+               </div>
+            </div>
+            <div class="article_highlight_content--card">
+               <div class="article_highlight_content--card--image-container">
+                  <img class="article_highlight_content--card--image-container-img" src="../../resources/images//article_highlights/oriento-MCN7xTTeAkw-unsplash.png" loading="lazy" alt="">
+               </div>
+               <ul class="article_highlight_content--card__tag-container">
+                  <li class="article_highlight_content--card__tag-container--list">Experiences</li>
+                  <li class="article_highlight_content--card__tag-container--list">Guide</li>
+                  <li class="article_highlight_content--card__tag-container--list">Culture</li>
+               </ul>
+               <div class="article_highlight_content--card_header">
+                  <p>Tales of Tea</p>
+               </div>
+               <div class="article_highlight_content--card_text">
+                  <p>Almost every culture has its own unique history with the world’s most widely consumed beverage (aside from water).</p>
+               </div>
+               <div class="article_highlight_content--card_more">
+                  <a href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- article insight ends -->
+
     <!-- footer starts  -->
-    <section class="footer-container">
-      <div class="footer-container__properties-block">
-        <div class="footer-container__properties-block__properties">
-          <a><img src="../../resources/images/footer_new/FraserHospitality.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/FraserSuites.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/FraserResidence.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/FraserPlace.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/Capri.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/Modena.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/Malmaison.png" alt=""></a>
-          <a><img src="../../resources/images/footer_new/HotelduVin.png" alt=""></a>
-        </div>
-        <div class="footer-container__properties-block__menus">
-          <div class="footer-container__properties-block__menus__fmenus">                    
-            <a href="#">News</a>
-            <a href="#">Sustainability</a>
-            <a href="#">Investor Relations</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Best Rate Guarantee</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Site Map</a>
+    <footer class="footer footer--bg-style-1">
+      <div class="footer__top">
+        <div class="grid-container">
+          <div class="footer__logos-section">
+            <div class="footer__logos-section__left">
+              <a href="#">
+                <img src="../../resources/images/footer_new/FraserHospitality.png" alt="Frasers Hospitality" loading="lazy">
+              </a>
+            </div>
+            <ul class="footer__logos-section__right list-unstyled mb-0">
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/FraserSuites.png" alt="Frasers Suites" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/FraserResidence.png" alt="Frasers Residence" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/FraserPlace.png" alt="Frasers Place" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/Capri.png" alt="Capri" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/Modena.png" alt="Modena" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/Malmaison.png" alt="Malmaison" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../resources/images/footer_new/HotelduVin.png" alt="Hotel Du Vin Bistro" loading="lazy">
+                </a>
+              </li>
+            </ul>
+          </div> <!-- /.footer__logos-section -->
+          <div class="footer__nav-social-row">
+            <nav class="footer__navbar">
+              <ul class="footer__navbar__nav list-unstyled">
+                <li>
+                  <a href="#">
+                    <span>News</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Sustainability</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Investor Relations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Best Rate Guarantee</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Privacy Policy</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Terms of Use</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Site Map</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> <!-- /.footer__navbar -->
+            <ul class="social-share-list list-unstyled mb-0">
+              <li>
+                <a href="#">
+                  <i class="fa fa-weixin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul> <!-- /.social-share-list -->
+          </div> <!-- /.footer__nav-social-row -->
+        </div> <!-- /.container -->
+      </div> <!-- /.footer__top -->
+      <div class="footer__bottom">
+        <div class="grid-container">
+          <div class="footer__copyright">
+            <img src="../../resources/images/footer/frasers-property-logo.png" alt="Frasers Property" loading="lazy" class="footer__copyright__logo">
+            <p>© 2021 Frasers Hospitality Pte Ltd. A member of Frasers Property Group.</p>
           </div>
-          <div class="footer-container__properties-block__menus__smicons">
-            <a href="#"><i class="fa fa-wechat"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>                
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square"></i></a>
-          </div>
         </div>
-      </div>
-      <div class="footer-container__copyright-block">
-        <a href="#"><img src="../../resources/images/footer/frasers-property-logo.png" alt=""></a>
-        <p>&copy; 2021 Frasers Hospitality Pte Ltd. A member of Frasers Property Group. </p>
-      </div>
-    </section>
+      </div> <!-- /.footer__bottom -->
+    </footer>
     <!-- footer ends -->
 
   </body>
@@ -395,7 +667,12 @@
   </script><script src="../../site/js/swiper-bundle.min.js"></script>  
   <script type="text/javascript" src="../../site/js/moment.min.js"></script>
   <script type="text/javascript" src="../../site/js/daterangepicker.min.js"></script>
-
+  <script src="../../site/js/aos.js"></script>
+  <script>
+     AOS.init({
+     duration: 2000,
+     });
+  </script>
   <script>
 
     // banner carousel
@@ -411,7 +688,7 @@
       });
     });
     
-    // global header
+    // global footprint
     $(document).ready(function(){
       $('.global-footprint .owl-carousel').owlCarousel({
         items: 5,                
@@ -428,7 +705,7 @@
     });   
     
     $(function(){
-      let autoPlayDelay = 5000;
+      let autoPlayDelay = 4000;
       let options = {
         init: true,
         // Optional parameters
@@ -504,7 +781,8 @@
             $(".global-header").css({
               'position': 'relative'
             });
-            $('body').removeAttr('style')
+            $('body').removeAttr('style');
+            $(".home-booking-widget_section").removeAttr('style');
           } else {
             $(".global-header").css({
               'position': 'fixed',
@@ -516,6 +794,9 @@
             $('body').css({
               'padding-top': '40px'
             })
+            $(".home-booking-widget_section").css({
+              'bottom': '14%'
+            });
           }
           lastScrollTop = nowScrollTop;
         }

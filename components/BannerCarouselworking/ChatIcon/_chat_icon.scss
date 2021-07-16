@@ -1,6 +1,6 @@
 .chat-icon {
-  position: fixed;
-  right: 5%;
+  @extend .p-fixed;
+  right: 3%;
   top: 70%;
   z-index: 999;
   background-color: #FFF;

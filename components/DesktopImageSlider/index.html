@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop Image Slider</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../site/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../site/dist/custom.css">
 </head>
 <body>
@@ -61,15 +61,16 @@
     </div>
   </section>
   <script src="../../site/js/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+  <script src="../../site/js/swiper-bundle.min.js"></script>    
   <script>
-    jQuery(document).ready(function($){
+    $(document).ready(function($){
       let autoPlayDelay = 5000;
       let options = {
         init: true,
         // Optional parameters
         slidesPerView: 'auto',
         spaceBetween: 110,
+        loop: true,
         centeredSlides: true,
         autoplay: {
           delay: autoPlayDelay,

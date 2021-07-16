@@ -1,5 +1,5 @@
 .hashtag-alert-absolute {
-  position: absolute;
+  @extend .p-absolute;
   left: 0;
   top: 150px;
   width: 25px;
@@ -23,7 +23,7 @@
 }
 
 .hashtag-alert-fixed {
-  position: fixed;
+  @extend .p-fixed;
   left: 0;
   top: 150px;
   width: 25px;
@@ -46,4 +46,3 @@
   font-weight: 500;
   font-family: 'Roboto-Medium';
 }
-/*# sourceMappingURL=style.css.map */

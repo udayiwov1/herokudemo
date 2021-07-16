@@ -1,103 +1,205 @@
-.footer-container .footer-container__properties-block {
-  background-color: #dcdcdc;
-  padding: 1% 10%;
-  font-family: 'Cormorant_Garamond-Regular';
+.footer {
+  font-size: 16px;
+  &__top {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    @include breakpoint(ipad-max) {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__logos-section,
+  &__nav-social-row {
+    @extend .d-flex;
+    @extend .align-items-center;
+  }
+
+  &__logos-section {
+    margin-bottom: 30px;
+    @include breakpoint(ipad-max) {
+      flex-direction: column;
+    }
+    @include breakpoint(mobile-max) {
+      margin-bottom: 10px;
+    }
+
+    &__left,
+    &__right {
+      a,
+      img {
+        @extend .d-block;
+      }
+      a{
+        filter: brightness(0) invert(0);
+       &:hover{
+        filter: grayscale(0);
+       }
+      }
+      
+    }
+
+    &__left {
+      @include breakpoint(medium-desktop-min) {
+        margin-right: 15px;
+        padding-right: 25px;
+        border-right: 1px solid #000;
+      }
+      @include breakpoint(ipad-max) {
+        margin-bottom: 45px;
+      }
+    }
+
+    &__right {
+      @extend .d-flex;
+      @extend .justify-content-center;
+      @extend .align-items-center;
+      @extend .flex-auto;
+      @include breakpoint (ipad-max) {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        > li {
+          margin-bottom: 30px;
+        }
+      }
+
+      a {
+        padding: 0 15px;
+        @include breakpoint(mobile-max) {
+          padding: 0 10px;
+          max-width: 120px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__nav-social-row {
+    @extend .justify-content-between;
+    @include breakpoint(ipad-max) {
+      flex-direction: column;
+    }
+  }
+
+  &__navbar {
+    @extend .flex-auto;
+    @include breakpoint(medium-desktop-min) {
+      margin-right: 10px;
+    }
+    @include breakpoint(ipad-max) {
+      margin-bottom: 50px;
+    }
+
+    &__nav {
+      margin-left: -5px;
+      @extend .d-flex;
+      margin-bottom: 0;
+      @include breakpoint(ipad-max) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      > li {
+        &:not(:last-child) {
+          @include breakpoint(medium-desktop-min) {
+            margin-right: 10px;
+          }
+          @include breakpoint(large-desktop-min) {
+            margin-right: 30px;
+          }
+        }
+
+        > a {
+          font-size: 0.875rem;
+          padding: 0 5px;
+          @extend .d-block;
+          font-family: 'Cormorant_Garamond-Regular';
+          color: #222222;
+          @include breakpoint(ipad-max) {
+            padding: 8px 12px;
+            font-size: 1rem;
+          }
+
+          span {
+            @extend .p-relative;
+
+            &::after {
+              content: "";
+              @extend .p-absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 1px;
+              opacity: 0.6;
+              background-color: #000000; 
+            }
+          }
+
+          &:hover,
+          &:focus {
+            span {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 5px 0;
+    background-color: #000000;
+  }
+
+  &__copyright {
+    font-size: 0.75rem;
+    @extend .d-flex;
+    @extend .align-items-center;
+    color: #fff;
+    @include breakpoint(ipad-max) {
+      font-size: 0.625rem;
+    }
+
+    &__logo {
+      width: 98px;
+      margin-right: 10px;
+      @extend .d-block;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &--bg-style-1 {
+    background-color: #dcdcdc;
+  }
 }
 
-.footer-container .footer-container__properties-block .footer-container__properties-block__properties {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+.social-share-list {
+  @extend .d-flex;
 
-.footer-container .footer-container__properties-block .footer-container__properties-block__properties a {
-  position: relative;
-  display: inline-block;
-  margin-right: 15px;
-  height: 70px;
-}
+  li {
+    a {
+      padding: 0 8px;
+      font-size: 1.25rem;
+      color: #000000;
+      @extend .d-block;
+      @extend .lh-1;
 
-.footer-container .footer-container__properties-block .footer-container__properties-block__properties a img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__properties a:hover img {
-  -webkit-filter: none;
-  filter: none;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__properties a:first-child::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -11%;
-  bottom: 0;
-  width: 1px;
-  background-color: #000000;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__menus .footer-container__properties-block__menus__fmenus a {
-  margin-right: 30px;
-  list-style-type: none;
-  text-decoration: none;
-  color: #808080;
-  font-size: 14px;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__menus .footer-container__properties-block__menus__smicons a {
-  list-style-type: none;
-  text-decoration: none;
-  color: #000;
-  margin-right: 10px;
-}
-
-.footer-container .footer-container__properties-block .footer-container__properties-block__menus .footer-container__properties-block__menus__smicons a .fa {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.footer-container .footer-container__copyright-block {
-  background-color: #000000;
-  padding: 0 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'Roboto-Regular';
-}
-
-.footer-container .footer-container__copyright-block a {
-  margin-right: 10px;
-}
-
-.footer-container .footer-container__copyright-block a img {
-  padding: 5px 0;
-  width: 113px;
-}
-
-.footer-container .footer-container__copyright-block p {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  color: #FFF;
-  font-size: 12px;
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+      @include breakpoint(ipad-max) {
+        padding: 0 12px;
+      }
+    }
+  }
 }

@@ -15,14 +15,6 @@ body {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-.grid-container {
-  max-width: 1190px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .grid-row {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -66,31 +58,31 @@ body {
 .mb-30 {
 	margin-bottom: 30px;
 }
-.no-padding {
+.p-0 {
 	padding: 0 !important;
 }
-.no-padding_top {
+.no-pt {
 	padding-top: 0 !important;
 }
-.no-padding_left {
+.pl-0 {
 	padding-left: 0 !important;
 }
-.no-padding_bottom {
+.pb-0 {
 	padding-bottom: 0 !important;
 }
-.no-padding_right {
+.pr-0 {
 	padding-right: 0 !important;
 }
-.padding-15 {
+.p-15 {
 	padding: 15px;
 }
-.padding-30 {
+.p-30 {
 	padding: 30px;
 }
-.padding-top-50 {
+.pt-50 {
 	padding-top: 50px;
 }
-.padding-bottom-50 {
+.pb-50 {
 	padding-bottom: 50px;
 }
 a {
@@ -127,9 +119,9 @@ a {
 	border-color: #866D4B;
 	color: #fff;
 	&:hover {
-		background-color: transparent;
-		border-color: #866D4B;
-		color: #866D4B;
+		background-color: white;
+		border-color: #866d4b;
+		color: #866d4b;
 	}
 	&:active {
 		background-color: transparent;
@@ -190,9 +182,7 @@ textarea {
 	color: #222222;
 	opacity: 0.8;
 	&:hover {
-		background-color: transparent;
-		border-color: #222222;
-		color: #222222;
+    font-family: 'Cormorant_Garamond-Bold' !important;
 	}
 	&:active {
 		background-color: transparent;
@@ -204,9 +194,7 @@ textarea {
 	border-color: #FFFFFF;
 	opacity: 1;
 	&:hover {
-  // font-family: 'Cormorant_Garamond-Regular';
-  // font-size: 14px;
-  // line-height: 17px;
+    font-family: 'Cormorant_Garamond-Bold' !important;
 	}
 	&:acitve {
 		border-width: 2px;
@@ -234,12 +222,12 @@ textarea {
 }
 .sebastian-boby-alt{
   display: inline-block;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: normal;
   font-family: "Sebastian-Boby-Alt" !important;
   text-transform: lowercase;
   position: relative;
-  top: 15px;
+  top: 20px;
   left: 10px;
 }
 .sebastian-boby2{
@@ -250,20 +238,163 @@ textarea {
   top: 10px;
 }
 
-@media (min-width:1281px) { 
-  body{
-    // font-size: 20px !important;
-  } 
-  .grid-container {
-    max-width: 1140px;
+.fw-500 {
+	font-weight: 500;
   }
+  
+  .fw-600 {
+	font-weight: 600;
+  }
+  
+  .p-0 {
+	padding: 0 !important;
+  }
+  
+  .p-30{
+	padding: 30px !important;
+  }
+
+  .p-50{
+	padding: 50px !important;
+  }
+
+  .pt-0 {
+	padding-top: 0 !important;
+  }
+  
+  .pb-0 {
+	padding-bottom: 0 !important;
+  }
+  
+  .m-0 {
+	margin: 0 !important;
+  }
+  
+  .mt-0 {
+	margin-top: 0 !important;
+  }
+  
+  .mt-30 {
+	margin-top: 30px !important;
+  }
+  
+  .mb-0 {
+	margin-bottom: 0 !important;
+  }
+
+  .mt-50 {
+	margin-top: 50px !important;
+  }
+
+  .mb-50 {
+	margin-bottom: 50px !important;
+  }
+
+  .list-unstyled {
+	padding-left: 0;
+	list-style: none;
+  }
+  
+  // Position
+  .p-relative {
+	position: relative;
+  }
+  
+  .p-absolute {
+	position: absolute;
+  }
+  
+  .p-fixed {
+	position: fixed;
+  }
+  // Line height
+  .lh-1 {
+	line-height: 1;
+  }
+  
+  // Block
+  .d-block {
+	display: block;
+  }
+  
+  .d-none {
+	display: none;
+  }
+  
+  // Flex
+  .d-flex {
+	display: flex;
+  }
+  
+  .justify-content-start {
+	justify-content: flex-start;
+  }
+  
+  .justify-content-end {
+	justify-content: flex-end;
+  }
+  
+  .justify-content-center {
+	justify-content: center;
+  }
+  
+  .justify-content-between {
+	justify-content: space-between;
+  }
+
+  .justify-content-space-around {
+	justify-content: space-around;
+  }
+  
+  .align-items-center {
+	align-items: center;
+  }
+  
+  .flex-110 {
+	flex: 1 1 0;
+  }
+  
+  .flex-auto {
+	flex: 1 1 auto;
+  }
+  
+  .flex-column {
+	flex-direction: column;
+  }
+
+// Container and Grid Spacing
+$container-width: 1190px;
+$grid-space: 15px;
+.grid-container {
+  max-width: $container-width;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-space;
+  padding-right: $grid-space;
 }
 
-@media (min-width: 1200px) {
-  body{
-    // font-size: 20px !important;
-  }
-	.grid-container {
-		max-width: 1140px;
+$breakpoints: (
+	'custom-small-mobile-max': (max-width: 359px),
+	'portrait-mobile-max': (max-width: 575px),
+	'mobile-min': (min-width: 576px),
+	'mobile-max': (max-width: 767px),
+	'ipad-min': (min-width: 768px),
+	'ipad-max': (max-width: 991px),
+	'medium-desktop-min': (min-width: 992px),
+	'medium-desktop-max': (max-width: 1199px),
+	'large-desktop-min': (min-width: 1200px),
+	'medium-large-desktop-min': (min-width: 1366px),
+	'medium-large-desktop-max': (max-width: 1400px),
+);
+  
+@mixin breakpoint($name) {
+	@if map-has-key($breakpoints, $name) {
+	  @media screen and #{inspect(map-get($breakpoints, $name))} {
+		@content;
+	  }
+	}
+	@else {
+	  @warn "Couldn't find a breakpoint named `#{$name}`.";
 	}
 }
