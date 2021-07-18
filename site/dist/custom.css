@@ -374,11 +374,11 @@ textarea:focus {
   list-style: none;
 }
 
-.p-relative, .offer-display-home-page .offer-item2, .article_highlight__heading--container_title-container, .image, .swiper-progress-bar, .weekend, .footer__navbar__nav > li > a span, .fraser-world__container__text_container_title-container, .fraser-world__container__text_container__brands_showcase {
+.p-relative, .offer-highlights_row-right, .offer-highlights_row-left, .article_highlight__heading--container_title-container, .image, .swiper-progress-bar, .weekend, .footer, .fraser-world__container__text_container_title-container, .fraser-world__container__text_container__brands_showcase {
   position: relative;
 }
 
-.p-absolute, .offer-display-home-page .offer-item2 .offer-details, .offer-display-home-page .offer-item2 .overlay, .article_highlight__heading--container_title-container p:nth-child(2), .swiper-progress-bar .progress-sections, .swiper-progress-bar .progress, .home-booking-widget_section, .footer__navbar__nav > li > a span::after, .fraser-world__container__text_container_title-container--title_text::after, .fraser-world__container__text_container__brands_showcase--fraser_logo:nth-child(0)::after, .fraser-world__container__text_container__brands_showcase::before, .hashtag-alert-absolute {
+.p-absolute, .offer-highlights .overlay, .offer-highlights_row-right--details, .article_highlight__heading--container_title-container p:nth-child(2), .swiper-progress-bar .progress-sections, .swiper-progress-bar .progress, .home-booking-widget_section, .footer_back-top-top, .fraser-world__container__text_container_title-container--title_text::after, .fraser-world__container__text_container__brands_showcase--fraser_logo:nth-child(0)::after, .fraser-world__container__text_container__brands_showcase::before, .hashtag-alert-absolute {
   position: absolute;
 }
 
@@ -400,7 +400,7 @@ textarea:focus {
   display: none;
 }
 
-.d-flex, .article_highlight_content--card__tag-container, .article_highlight_content, .article_highlight__heading--container_title-container, .image .cmp-image, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .social-share-list, .footer__copyright, .footer__navbar__nav, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container__iternary, .fraser-world__container {
+.d-flex, .offer-highlights_row-right--details__pricing--price, .offer-highlights_row-right--details__pricing, .offer-highlights_row-right--details, .offer-highlights_row, .offer-highlights, .article_highlight_content--card__tag-container, .article_highlight_content, .article_highlight__heading--container_title-container, .image .cmp-image, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .social-share-list, .footer__copyright, .footer__navbar__nav, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container__iternary, .fraser-world__container {
   display: flex;
 }
 
@@ -412,11 +412,11 @@ textarea:focus {
   justify-content: flex-end;
 }
 
-.justify-content-center, .article_highlight__heading--container_title-container, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top, .home-booking-widget_section, .footer__logos-section__right, .fraser-world__container {
+.justify-content-center, .offer-highlights_row-right--details, .offer-highlights_row, .offer-highlights, .article_highlight__heading--container_title-container, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top, .home-booking-widget_section, .footer__logos-section__right, .fraser-world__container {
   justify-content: center;
 }
 
-.justify-content-between, .article_highlight_content, .footer__nav-social-row {
+.justify-content-between, .offer-highlights_row-right--details__pricing, .article_highlight_content, .footer__nav-social-row {
   justify-content: space-between;
 }
 
@@ -424,7 +424,7 @@ textarea:focus {
   justify-content: space-around;
 }
 
-.align-items-center, .article_highlight__heading--container_title-container, .banner-slider-container .swiper-container .swiper-wrapper, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .footer__copyright, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container {
+.align-items-center, .offer-highlights_row-right--details__pricing, .article_highlight__heading--container_title-container, .banner-slider-container .swiper-container .swiper-wrapper, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .footer__copyright, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container {
   align-items: center;
 }
 
@@ -801,11 +801,11 @@ textarea:focus {
   list-style: none;
 }
 
-.p-relative, .offer-display-home-page .offer-item2, .article_highlight__heading--container_title-container, .image, .swiper-progress-bar, .weekend, .footer__navbar__nav > li > a span, .fraser-world__container__text_container_title-container, .fraser-world__container__text_container__brands_showcase {
+.p-relative, .offer-highlights_row-right, .offer-highlights_row-left, .article_highlight__heading--container_title-container, .image, .swiper-progress-bar, .weekend, .footer, .fraser-world__container__text_container_title-container, .fraser-world__container__text_container__brands_showcase {
   position: relative;
 }
 
-.p-absolute, .offer-display-home-page .offer-item2 .offer-details, .offer-display-home-page .offer-item2 .overlay, .article_highlight__heading--container_title-container p:nth-child(2), .swiper-progress-bar .progress-sections, .swiper-progress-bar .progress, .home-booking-widget_section, .footer__navbar__nav > li > a span::after, .fraser-world__container__text_container_title-container--title_text::after, .fraser-world__container__text_container__brands_showcase--fraser_logo:nth-child(0)::after, .fraser-world__container__text_container__brands_showcase::before, .hashtag-alert-absolute {
+.p-absolute, .offer-highlights .overlay, .offer-highlights_row-right--details, .article_highlight__heading--container_title-container p:nth-child(2), .swiper-progress-bar .progress-sections, .swiper-progress-bar .progress, .home-booking-widget_section, .footer_back-top-top, .fraser-world__container__text_container_title-container--title_text::after, .fraser-world__container__text_container__brands_showcase--fraser_logo:nth-child(0)::after, .fraser-world__container__text_container__brands_showcase::before, .hashtag-alert-absolute {
   position: absolute;
 }
 
@@ -827,7 +827,7 @@ textarea:focus {
   display: none;
 }
 
-.d-flex, .article_highlight_content--card__tag-container, .article_highlight_content, .article_highlight__heading--container_title-container, .image .cmp-image, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .social-share-list, .footer__copyright, .footer__navbar__nav, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container__iternary, .fraser-world__container {
+.d-flex, .offer-highlights_row-right--details__pricing--price, .offer-highlights_row-right--details__pricing, .offer-highlights_row-right--details, .offer-highlights_row, .offer-highlights, .article_highlight_content--card__tag-container, .article_highlight_content, .article_highlight__heading--container_title-container, .image .cmp-image, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .social-share-list, .footer__copyright, .footer__navbar__nav, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container__iternary, .fraser-world__container {
   display: flex;
 }
 
@@ -839,11 +839,11 @@ textarea:focus {
   justify-content: flex-end;
 }
 
-.justify-content-center, .article_highlight__heading--container_title-container, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top, .home-booking-widget_section, .footer__logos-section__right, .fraser-world__container {
+.justify-content-center, .offer-highlights_row-right--details, .offer-highlights_row, .offer-highlights, .article_highlight__heading--container_title-container, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top, .home-booking-widget_section, .footer__logos-section__right, .fraser-world__container {
   justify-content: center;
 }
 
-.justify-content-between, .article_highlight_content, .footer__nav-social-row {
+.justify-content-between, .offer-highlights_row-right--details__pricing, .article_highlight_content, .footer__nav-social-row {
   justify-content: space-between;
 }
 
@@ -851,7 +851,7 @@ textarea:focus {
   justify-content: space-around;
 }
 
-.align-items-center, .article_highlight__heading--container_title-container, .banner-slider-container .swiper-container .swiper-wrapper, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .footer__copyright, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container {
+.align-items-center, .offer-highlights_row-right--details__pricing, .article_highlight__heading--container_title-container, .banner-slider-container .swiper-container .swiper-wrapper, .banner-slider-container .banner-slider-container__header, .home-booking-widget_section-top__search_container, .home-booking-widget_section-top, .home-booking-widget_section, .footer__copyright, .footer__logos-section__right, .footer__logos-section, .footer__nav-social-row, .fraser-world__container {
   align-items: center;
 }
 
@@ -1679,6 +1679,22 @@ textarea:focus {
 .footer {
   font-size: 16px;
 }
+.footer_back-top-top {
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  text-transform: uppercase;
+  color: #515151;
+  top: -15%;
+  right: 10%;
+  background-color: transparent;
+  padding: 0;
+}
+.footer_back-top-top .fa {
+  position: relative;
+  top: 2px;
+  left: 5px;
+  font-size: 20px;
+}
 .footer__top {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -1787,18 +1803,6 @@ textarea:focus {
     padding: 8px 12px;
     font-size: 1rem;
   }
-}
-.footer__navbar__nav > li > a span::after {
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  opacity: 0.6;
-  background-color: #000000;
-}
-.footer__navbar__nav > li > a:hover span::after, .footer__navbar__nav > li > a:focus span::after {
-  width: 100%;
 }
 .footer__bottom {
   padding: 5px 0;
@@ -2119,7 +2123,7 @@ textarea:focus {
   color: #222222;
 }
 .banner-slider-container .banner-slider-container__header p {
-  font-family: "Roboto-Regular";
+  font-family: "Cormorant_Garamond-Regular";
   font-size: 16px;
   text-align: center;
   margin: 0 25%;
@@ -2321,25 +2325,18 @@ textarea:focus {
   color: #222222;
   font-size: 24px;
   font-weight: normal;
+  padding-bottom: 10px;
   overflow-wrap: break-word;
   font-family: "Cormorant_Garamond-Medium";
-  margin: 15px 0;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  margin-top: 15px;
 }
 .article_highlight_content--card_text {
   font-size: 14px;
   color: #5f5f5f;
   font-family: "Roboto-Regular";
+  padding-bottom: 10px;
   word-wrap: break-word;
   line-height: 1.4;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  margin-bottom: 10px;
-  -webkit-box-orient: vertical;
 }
 .article_highlight_content--card_more {
   padding: 10px 0;
@@ -2348,26 +2345,70 @@ textarea:focus {
   font-family: "Cormorant_Garamond-SemiBold";
 }
 
-.offer-display-home-page {
-  padding: 1% 7% 5% 9%;
-  display: grid;
-  grid-template-columns: 417px 374px 373px;
-  background-color: #dbdbdb;
-}
-.offer-display-home-page .offer-item1 {
+.box {
+  width: 400px;
+  border: 1px solid red !important;
   position: relative;
-  padding: 65px 35px;
-  background-color: #fff;
-  height: 404px;
+}
+
+.box > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: hello;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: hello;
+  animation-duration: 9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(20000);
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  opacity: 0;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
   overflow: hidden;
 }
-.offer-display-home-page .offer-item1 h2 {
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.offer-highlights {
+  padding: 1% 7% 5% 9%;
+  background-color: #dbdbdb;
+}
+.offer-highlights_row :hover > img {
+  transform: scale(1.2);
+}
+.offer-highlights_row-left {
+  padding: 65px 35px;
+  width: 35%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.offer-highlights_row-left--title {
   color: #222222;
   font-size: 37px;
   text-transform: uppercase;
   font-family: "Cormorant_Garamond-Medium";
+  font-weight: 400;
 }
-.offer-display-home-page .offer-item1 .offer-enjoy {
+.offer-highlights_row-left--desc {
   font-family: "Roboto-Regular";
   color: #5f5f5f;
   font-size: 14px;
@@ -2375,7 +2416,7 @@ textarea:focus {
   width: 150px;
   line-height: 1.5;
 }
-.offer-display-home-page .offer-item1 .view-all-offers {
+.offer-highlights_row-left--link {
   font-family: "Cormorant_Garamond-Semibold";
   color: #866d4b;
   font-size: 17px;
@@ -2383,384 +2424,76 @@ textarea:focus {
   position: absolute;
   bottom: 30px;
 }
-.offer-display-home-page .offer-item2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
+.offer-highlights_row-right {
   height: 404px;
   overflow: hidden;
 }
-.offer-display-home-page .offer-item2 .overlay {
-  content: "";
-  left: 0;
-  top: 0;
+.offer-highlights_row-right--img {
+  width: 100%;
   height: 100%;
-  width: 100%;
-  background-color: #29232300;
-  background-image: linear-gradient(rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.8));
-}
-.offer-display-home-page .offer-item2 img {
-  width: 747px;
-  height: 404px;
   transition: transform 0.4s ease;
+  transform: scale(1);
 }
-.offer-display-home-page .offer-item2 .offer-details {
-  width: 100%;
-  padding: 30px;
+.offer-highlights_row-right--details {
+  left: 0;
   bottom: 0;
+  right: 0;
+  padding: 15px 40px;
+  flex-direction: column;
 }
-.offer-display-home-page .offer-item2 .offer-details h4 {
+.offer-highlights_row-right--details--title {
   font-size: 26px;
   font-family: "Cormorant_Garamond-Medium";
   color: #fff;
   font-weight: 400;
   text-shadow: 0px 3px 6px #000000a6;
 }
-.offer-display-home-page .offer-item2 .offer-details .vd {
-  margin: 10px 0 25px 0;
+.offer-highlights_row-right--details--link {
+  margin: 10px 0;
   font-size: 12px;
   font-family: "Roboto-Regular";
   color: #fff;
+  letter-spacing: 1px;
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details {
-  width: 100%;
-  display: flex;
+.offer-highlights_row-right--details__pricing {
   padding: 5px 0;
   border-top: 1px solid #ffffff59;
-  justify-content: space-between;
-  height: 55px;
+  flex-direction: row;
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .prize {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 20%;
+.offer-highlights_row-right--details__pricing--price {
+  padding: 10px;
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .prize .from-p {
+.offer-highlights_row-right--details__pricing--price_from {
+  margin-right: 30px;
+}
+.offer-highlights_row-right--details__pricing--price_from-title {
   color: #fff;
   font-size: 10px;
   font-family: "Roboto-Regular";
   padding-bottom: 5px;
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .prize .from-prize {
+.offer-highlights_row-right--details__pricing--price_from-desc {
   color: #fff;
   font-size: 16px;
   font-family: "Roboto-Medium";
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .prize .members-only .members {
+.offer-highlights_row-right--details__pricing--price_members-only--title {
   color: #fff;
   font-size: 10px;
   font-family: "Roboto-Regular";
   padding-bottom: 5px;
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .prize .members-only .members-prize {
+.offer-highlights_row-right--details__pricing--price_members-only--desc {
   color: #fff;
   font-size: 16px;
   font-family: "Roboto-Medium";
 }
-.offer-display-home-page .offer-item2 .offer-details .prize-details .booking-button {
-  display: flex;
-}
-.offer-display-home-page .offer-item2 .offer-details .prize-details .booking-button .a-booking-button {
-  align-self: flex-end;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Cormorant_Garamond-Semibold";
-  background-color: #866d4b;
-}
-.offer-display-home-page .offer-item2 .offer-details .prize-details .a-booking-button:hover {
-  color: #866d4b;
-  background-color: #fff;
-  border: 1px solid #866d4b;
-  font-family: "Cormorant_Garamond-bold";
-}
-.offer-display-home-page .offer-item2:hover img {
-  transform: scale(1.2);
-}
-.offer-display-home-page .offer-item3 {
-  position: relative;
-  height: 404px;
-  overflow: hidden;
-}
-.offer-display-home-page .offer-item3 img {
-  transition: transform 0.4s ease;
-}
-.offer-display-home-page .offer-item3 .overlay {
+.offer-highlights .overlay {
   content: "";
-  position: absolute;
-  left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #29232300;
   background-image: linear-gradient(rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.8));
-}
-.offer-display-home-page .offer-item3 .offer-details {
-  width: 100%;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
-}
-.offer-display-home-page .offer-item3 .offer-details h4 {
-  font-size: 26px;
-  font-family: "Cormorant_Garamond-Medium";
-  color: #fff;
-  font-weight: 400;
-  text-shadow: 0px 3px 6px #000000a6;
-}
-.offer-display-home-page .offer-item3 .offer-details .vd {
-  margin: 10px 0 20px 0;
-  font-size: 12px;
-  font-family: "Roboto-Regular";
-  color: #fff;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details {
-  width: 100%;
-  display: flex;
-  padding: 5px 0;
-  border-top: 1px solid #ffffff59;
-  justify-content: space-between;
-  height: 60px;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .prize {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 40%;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .prize .from-p {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .prize .from-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .prize .members-only .members {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .prize .members-only .members-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .booking-button {
-  display: flex;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .booking-button .a-booking-button {
-  align-self: flex-end;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Cormorant_Garamond-Semibold";
-  background-color: #866d4b;
-}
-.offer-display-home-page .offer-item3 .offer-details .prize-details .booking-button .a-booking-button:hover {
-  color: #866d4b;
-  background-color: #fff;
-  border: 1px solid #866d4b;
-  font-family: "Cormorant_Garamond-bold";
-}
-.offer-display-home-page .offer-item3:hover img {
-  transform: scale(1.2);
-}
-.offer-display-home-page .offer-item4 {
-  position: relative;
-  height: 404px;
-  overflow: hidden;
-}
-.offer-display-home-page .offer-item4 img {
-  width: 373px;
-  height: 404px;
-  transition: transform 0.4s ease;
-}
-.offer-display-home-page .offer-item4 .overlay {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #29232300;
-  background-image: linear-gradient(rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.8));
-}
-.offer-display-home-page .offer-item4 .offer-details {
-  width: 100%;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
-}
-.offer-display-home-page .offer-item4 .offer-details h4 {
-  font-size: 26px;
-  font-family: "Cormorant_Garamond-Medium";
-  color: #fff;
-  font-weight: 400;
-  text-shadow: 0px 3px 6px #000000a6;
-}
-.offer-display-home-page .offer-item4 .offer-details .vd {
-  margin: 10px 0 20px 0;
-  font-size: 12px;
-  font-family: "Roboto-Regular";
-  color: #fff;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details {
-  width: 100%;
-  display: flex;
-  padding: 5px 0;
-  border-top: 1px solid #ffffff59;
-  justify-content: space-between;
-  height: 60px;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .prize {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 40%;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .prize .from-p {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .prize .from-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .prize .members-only .members {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .prize .members-only .members-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .booking-button {
-  display: flex;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .booking-button .a-booking-button {
-  align-self: flex-end;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Cormorant_Garamond-Semibold";
-  background-color: #866d4b;
-}
-.offer-display-home-page .offer-item4 .offer-details .prize-details .booking-button .a-booking-button:hover {
-  color: #866d4b;
-  background-color: #fff;
-  border: 1px solid #866d4b;
-  font-family: "Cormorant_Garamond-bold";
-}
-.offer-display-home-page .offer-item4:hover img {
-  transform: scale(1.2);
-}
-.offer-display-home-page .offer-item5 {
-  position: relative;
-  height: 404px;
-  overflow: hidden;
-}
-.offer-display-home-page .offer-item5 img {
-  width: 373px;
-  height: 404px;
-  transition: transform 0.4s ease;
-}
-.offer-display-home-page .offer-item5 .overlay {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #29232300;
-  background-image: linear-gradient(rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.8));
-}
-.offer-display-home-page .offer-item5 .offer-details {
-  width: 100%;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
-}
-.offer-display-home-page .offer-item5 .offer-details h4 {
-  font-size: 26px;
-  font-family: "Cormorant_Garamond-Medium";
-  color: #fff;
-  font-weight: 400;
-  text-shadow: 0px 3px 6px #000000a6;
-}
-.offer-display-home-page .offer-item5 .offer-details .vd {
-  margin: 10px 0 20px 0;
-  font-size: 12px;
-  font-family: "Roboto-Regular";
-  color: #fff;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details {
-  width: 100%;
-  display: flex;
-  padding: 5px 0;
-  border-top: 1px solid #ffffff59;
-  justify-content: space-between;
-  height: 60px;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .prize {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 40%;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .prize .from-p {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .prize .from-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .prize .members-only .members {
-  color: #fff;
-  font-size: 10px;
-  font-family: "Roboto-Regular";
-  padding-bottom: 5px;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .prize .members-only .members-prize {
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .booking-button {
-  display: flex;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .booking-button .a-booking-button {
-  align-self: flex-end;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Cormorant_Garamond-Semibold";
-  background-color: #866d4b;
-}
-.offer-display-home-page .offer-item5 .offer-details .prize-details .booking-button .a-booking-button:hover {
-  color: #866d4b;
-  background-color: #fff;
-  border: 1px solid #866d4b;
-  font-family: "Cormorant_Garamond-bold";
-}
-.offer-display-home-page .offer-item5:hover img {
-  transform: scale(1.2);
 }

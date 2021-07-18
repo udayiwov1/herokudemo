@@ -1,469 +1,455 @@
-.offer-display-home-page {
+.offer-highlights {
   padding: 1% 7% 5% 9%;
-  display: grid;
-  grid-template-columns: 417px 374px 373px;
+  @extend .d-flex;
+  @extend .justify-content-center;
   background-color: #dbdbdb;
-
-  .offer-item1 {
-    position: relative;
-    padding: 65px 35px;
-    background-color: #fff;
-    height: 404px;
-    overflow: hidden;
-
-    h2 {
-      color: #222222;
-      font-size: 37px;
-      text-transform: uppercase;
-      font-family: "Cormorant_Garamond-Medium";
-    }
-
-    .offer-enjoy {
-      font-family: "Roboto-Regular";
-      color: #5f5f5f;
-      font-size: 14px;
-      margin-top: 20px;
-      width: 150px;
-      line-height: 1.5;
-    }
-
-    .view-all-offers {
-      font-family: "Cormorant_Garamond-Semibold";
-      color: #866d4b;
-      font-size: 17px;
-      text-transform: uppercase;
-      position: absolute;
-      bottom: 30px;
-    }
-  }
-
-  .offer-item2 {
-    @extend .p-relative;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    height: 404px;
-    overflow: hidden;
-
-    .overlay {
-      content: "";
-      @extend .p-absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #29232300;
-      background-image: linear-gradient(
-        rgb(100, 100, 100, 0),
-        rgb(0, 0, 0, 0.8)
-      );
-    }
-    img {
-      width: 747px;
-      height: 404px;
-      transition: transform 0.4s ease;
-    }
-
-    .offer-details {
-      width: 100%;
-      padding: 30px;
-      @extend .p-absolute;
-      bottom: 0;
-      h4 {
-        font-size: 26px;
-        font-family: "Cormorant_Garamond-Medium";
-        color: #fff;
-        font-weight: 400;
-        text-shadow: 0px 3px 6px #000000a6;
-      }
-      .vd {
-        margin: 10px 0 25px 0;
-        font-size: 12px;
-        font-family: "Roboto-Regular";
-        color: #fff;
-      }
-
-      .prize-details {
-        width: 100%;
-        display: flex;
-        padding: 5px 0;
-        border-top: 1px solid #ffffff59;
-        justify-content: space-between;
-        height: 55px;
-        .prize {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          width: 20%;
-          .from-p {
-            color: #fff;
-            font-size: 10px;
-            font-family: "Roboto-Regular";
-            padding-bottom: 5px;
-          }
-          .from-prize {
-            color: #fff;
-            font-size: 16px;
-            font-family: "Roboto-Medium";
-          }
-          .members-only {
-            .members {
-              color: #fff;
-              font-size: 10px;
-              font-family: "Roboto-Regular";
-              padding-bottom: 5px;
-            }
-            .members-prize {
-              color: #fff;
-              font-size: 16px;
-              font-family: "Roboto-Medium";
-            }
-          }
+    &_row{
+      @extend .d-flex;
+      @extend .justify-content-center;
+      :hover{
+        > img{
+          transform: scale(1.2);
         }
-        .booking-button {
-          display: flex;
-          .a-booking-button {
-            align-self: flex-end;
-            padding: 10px 25px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-            font-family: "Cormorant_Garamond-Semibold";
-            background-color: #866d4b;
-          }
+      }
+      &-left{
+        @extend .p-relative;
+        padding: 65px 35px;
+        width: 35%;
+        background-color: #fff;
+        overflow: hidden;
+        &--title{
+          color: #222222;
+          font-size: 37px;
+          text-transform: uppercase;
+          font-family: "Cormorant_Garamond-Medium";
+          font-weight: 400;
         }
-        .a-booking-button:hover {
+        &--desc{
+          font-family: "Roboto-Regular";
+          color: #5f5f5f;
+          font-size: 14px;
+          margin-top: 20px;
+          width: 150px;
+          line-height: 1.5;
+        }
+        &--link{
+          font-family: "Cormorant_Garamond-Semibold";
           color: #866d4b;
-          background-color: #fff;
-          border: 1px solid #866d4b;
-          font-family: "Cormorant_Garamond-bold";
+          font-size: 17px;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 30px;
         }
       }
-    }
-  }
 
-  .offer-item2:hover {
-    img {
-      transform: scale(1.2);
-    }
-  }
+      &-right{
+        @extend .p-relative;
+        height: 404px;
+        overflow: hidden;
+        &--img{
+          width: 100%;
+          height: 100%;
+          transition: transform 0.4s ease;
+          transform: scale(1);
+        }
+        &--details{
+          @extend .p-absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          padding: 15px 40px;
+          @extend .d-flex;
+          @extend .justify-content-center;
+          flex-direction: column;
+          &--title{
+            font-size: 26px;
+            font-family: "Cormorant_Garamond-Medium";
+            color: #fff;
+            font-weight: 400;
+            text-shadow: 0px 3px 6px #000000a6;
+          }
+          &--link{
+            margin: 10px 0;
+            font-size: 12px;
+            font-family: "Roboto-Regular";
+            color: #fff;
+            letter-spacing: 1px;
+          }
+          &__pricing{
+            @extend .d-flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;
+            padding: 5px 0;
+            border-top: 1px solid #ffffff59;
+            flex-direction: row;
+            &--price{
+              @extend .d-flex;
+              padding: 10px;
+              &_from{
+                margin-right: 30px;
+                &-title{
+                  color: #fff;
+                  font-size: 10px;
+                  font-family: "Roboto-Regular";
+                  padding-bottom: 5px;
+                }
+                &-desc{
+                  color: #fff;
+                  font-size: 16px;
+                  font-family: "Roboto-Medium";
+                }
+              }
+              &_members-only {
+                &--title {
+                  color: #fff;
+                  font-size: 10px;
+                  font-family: "Roboto-Regular";
+                  padding-bottom: 5px;
+                }
+                &--desc {
+                  color: #fff;
+                  font-size: 16px;
+                  font-family: "Roboto-Medium";
+                }
+              }
 
-  .offer-item3 {
-    position: relative;
-    height: 404px;
-    overflow: hidden;
-    img {
-      transition: transform 0.4s ease;
+            }
+          }
+        }
+      }
     }
 
     .overlay {
       content: "";
-      position: absolute;
-      left: 0;
+      @extend .p-absolute;
       top: 0;
-      height: 100%;
-      width: 100%;
+      left: 0;
+      bottom: 0;
+      right: 0;
       background-color: #29232300;
       background-image: linear-gradient(
         rgb(100, 100, 100, 0),
         rgb(0, 0, 0, 0.8)
       );
     }
-
-    .offer-details {
-      width: 100%;
-      padding: 30px;
-      position: absolute;
-      bottom: 0;
-      h4 {
-        font-size: 26px;
-        font-family: "Cormorant_Garamond-Medium";
-        color: #fff;
-        font-weight: 400;
-        text-shadow: 0px 3px 6px #000000a6;
-      }
-      .vd {
-        margin: 10px 0 20px 0;
-        font-size: 12px;
-        font-family: "Roboto-Regular";
-        color: #fff;
-      }
-
-      .prize-details {
-        width: 100%;
-        display: flex;
-        padding: 5px 0;
-        border-top: 1px solid #ffffff59;
-        justify-content: space-between;
-        height: 60px;
-        .prize {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          width: 40%;
-          .from-p {
-            color: #fff;
-            font-size: 10px;
-            font-family: "Roboto-Regular";
-            padding-bottom: 5px;
-          }
-          .from-prize {
-            color: #fff;
-            font-size: 16px;
-            font-family: "Roboto-Regular";
-          }
-          .members-only {
-            .members {
-              color: #fff;
-              font-size: 10px;
-              font-family: "Roboto-Regular";
-              padding-bottom: 5px;
-            }
-            .members-prize {
-              color: #fff;
-              font-size: 16px;
-              font-family: "Roboto-Regular";
-            }
-          }
-        }
-        .booking-button {
-          display: flex;
-          .a-booking-button {
-            align-self: flex-end;
-            padding: 10px 25px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-            font-family: "Cormorant_Garamond-Semibold";
-            background-color: #866d4b;
-          }
-          .a-booking-button:hover {
-            color: #866d4b;
-            background-color: #fff;
-            border: 1px solid #866d4b;
-            font-family: "Cormorant_Garamond-bold";
-          }
-        }
-      }
-    }
-  }
-  .offer-item3:hover {
-    img {
-      transform: scale(1.2);
-    }
-  }
-
-  .offer-item4 {
-    position: relative;
-    height: 404px;
-    overflow: hidden;
-    img {
-      width: 373px;
-      height: 404px;
-      transition: transform 0.4s ease;
-    }
-
-    .overlay {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #29232300;
-      background-image: linear-gradient(
-        rgb(100, 100, 100, 0),
-        rgb(0, 0, 0, 0.8)
-      );
-    }
-
-    .offer-details {
-      width: 100%;
-      padding: 30px;
-      position: absolute;
-      bottom: 0;
-      h4 {
-        font-size: 26px;
-        font-family: "Cormorant_Garamond-Medium";
-        color: #fff;
-        font-weight: 400;
-        text-shadow: 0px 3px 6px #000000a6;
-      }
-      .vd {
-        margin: 10px 0 20px 0;
-        font-size: 12px;
-        font-family: "Roboto-Regular";
-        color: #fff;
-      }
-
-      .prize-details {
-        width: 100%;
-        display: flex;
-        padding: 5px 0;
-        border-top: 1px solid #ffffff59;
-        justify-content: space-between;
-        height: 60px;
-        .prize {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          width: 40%;
-          .from-p {
-            color: #fff;
-            font-size: 10px;
-            font-family: "Roboto-Regular";
-            padding-bottom: 5px;
-          }
-          .from-prize {
-            color: #fff;
-            font-size: 16px;
-            font-family: "Roboto-Regular";
-          }
-          .members-only {
-            .members {
-              color: #fff;
-              font-size: 10px;
-              font-family: "Roboto-Regular";
-              padding-bottom: 5px;
-            }
-            .members-prize {
-              color: #fff;
-              font-size: 16px;
-              font-family: "Roboto-Regular";
-            }
-          }
-        }
-        .booking-button {
-          display: flex;
-          .a-booking-button {
-            align-self: flex-end;
-            padding: 10px 25px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-            font-family: "Cormorant_Garamond-Semibold";
-            background-color: #866d4b;
-          }
-
-          .a-booking-button:hover {
-            color: #866d4b;
-            background-color: #fff;
-            border: 1px solid #866d4b;
-            font-family: "Cormorant_Garamond-bold";
-          }
-        }
-      }
-    }
-  }
-  .offer-item4:hover {
-    img {
-      transform: scale(1.2);
-    }
-  }
-
-  .offer-item5 {
-    position: relative;
-    height: 404px;
-    overflow: hidden;
-    img {
-      width: 373px;
-      height: 404px;
-      transition: transform 0.4s ease;
-    }
-
-    .overlay {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #29232300;
-      background-image: linear-gradient(
-        rgb(100, 100, 100, 0),
-        rgb(0, 0, 0, 0.8)
-      );
-    }
-
-    .offer-details {
-      width: 100%;
-      padding: 30px;
-      position: absolute;
-      bottom: 0;
-      h4 {
-        font-size: 26px;
-        font-family: "Cormorant_Garamond-Medium";
-        color: #fff;
-        font-weight: 400;
-        text-shadow: 0px 3px 6px #000000a6;
-      }
-      .vd {
-        margin: 10px 0 20px 0;
-        font-size: 12px;
-        font-family: "Roboto-Regular";
-        color: #fff;
-      }
-
-      .prize-details {
-        width: 100%;
-        display: flex;
-        padding: 5px 0;
-        border-top: 1px solid #ffffff59;
-        justify-content: space-between;
-        height: 60px;
-        .prize {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          width: 40%;
-          .from-p {
-            color: #fff;
-            font-size: 10px;
-            font-family: "Roboto-Regular";
-            padding-bottom: 5px;
-          }
-          .from-prize {
-            color: #fff;
-            font-size: 16px;
-            font-family: "Roboto-Regular";
-          }
-          .members-only {
-            .members {
-              color: #fff;
-              font-size: 10px;
-              font-family: "Roboto-Regular";
-              padding-bottom: 5px;
-            }
-            .members-prize {
-              color: #fff;
-              font-size: 16px;
-              font-family: "Roboto-Regular";
-            }
-          }
-        }
-        .booking-button {
-          display: flex;
-          .a-booking-button {
-            align-self: flex-end;
-            padding: 10px 25px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-            font-family: "Cormorant_Garamond-Semibold";
-            background-color: #866d4b;
-          }
-          .a-booking-button:hover {
-            color: #866d4b;
-            background-color: #fff;
-            border: 1px solid #866d4b;
-            font-family: "Cormorant_Garamond-bold";
-          }
-        }
-      }
-    }
-  }
-  .offer-item5:hover {
-    img {
-      transform: scale(1.2);
-    }
-  }
 }
+//   .offer-item3 {
+//     position: relative;
+//     height: 404px;
+//     overflow: hidden;
+//     img {
+//       transition: transform 0.4s ease;
+//     }
+
+//     .overlay {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       height: 100%;
+//       width: 100%;
+//       background-color: #29232300;
+//       background-image: linear-gradient(
+//         rgb(100, 100, 100, 0),
+//         rgb(0, 0, 0, 0.8)
+//       );
+//     }
+
+//     .offer-details {
+//       width: 100%;
+//       padding: 30px;
+//       position: absolute;
+//       bottom: 0;
+//       h4 {
+//         font-size: 26px;
+//         font-family: "Cormorant_Garamond-Medium";
+//         color: #fff;
+//         font-weight: 400;
+//         text-shadow: 0px 3px 6px #000000a6;
+//       }
+//       .vd {
+//         margin: 10px 0 20px 0;
+//         font-size: 12px;
+//         font-family: "Roboto-Regular";
+//         color: #fff;
+//       }
+
+//       .prize-details {
+//         width: 100%;
+//         display: flex;
+//         padding: 5px 0;
+//         border-top: 1px solid #ffffff59;
+//         justify-content: space-between;
+//         height: 60px;
+//         .prize {
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: flex-end;
+//           width: 40%;
+//           .from-p {
+//             color: #fff;
+//             font-size: 10px;
+//             font-family: "Roboto-Regular";
+//             padding-bottom: 5px;
+//           }
+//           .from-prize {
+//             color: #fff;
+//             font-size: 16px;
+//             font-family: "Roboto-Regular";
+//           }
+//           .members-only {
+//             .members {
+//               color: #fff;
+//               font-size: 10px;
+//               font-family: "Roboto-Regular";
+//               padding-bottom: 5px;
+//             }
+//             .members-prize {
+//               color: #fff;
+//               font-size: 16px;
+//               font-family: "Roboto-Regular";
+//             }
+//           }
+//         }
+//         .booking-button {
+//           display: flex;
+//           .a-booking-button {
+//             align-self: flex-end;
+//             padding: 10px 25px;
+//             text-decoration: none;
+//             color: #fff;
+//             font-size: 14px;
+//             font-family: "Cormorant_Garamond-Semibold";
+//             background-color: #866d4b;
+//           }
+//           .a-booking-button:hover {
+//             color: #866d4b;
+//             background-color: #fff;
+//             border: 1px solid #866d4b;
+//             font-family: "Cormorant_Garamond-bold";
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .offer-item3:hover {
+//     img {
+//       transform: scale(1.2);
+//     }
+//   }
+
+//   .offer-item4 {
+//     position: relative;
+//     height: 404px;
+//     overflow: hidden;
+//     img {
+//       width: 373px;
+//       height: 404px;
+//       transition: transform 0.4s ease;
+//     }
+
+//     .overlay {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       height: 100%;
+//       width: 100%;
+//       background-color: #29232300;
+//       background-image: linear-gradient(
+//         rgb(100, 100, 100, 0),
+//         rgb(0, 0, 0, 0.8)
+//       );
+//     }
+
+//     .offer-details {
+//       width: 100%;
+//       padding: 30px;
+//       position: absolute;
+//       bottom: 0;
+//       h4 {
+//         font-size: 26px;
+//         font-family: "Cormorant_Garamond-Medium";
+//         color: #fff;
+//         font-weight: 400;
+//         text-shadow: 0px 3px 6px #000000a6;
+//       }
+//       .vd {
+//         margin: 10px 0 20px 0;
+//         font-size: 12px;
+//         font-family: "Roboto-Regular";
+//         color: #fff;
+//       }
+
+//       .prize-details {
+//         width: 100%;
+//         display: flex;
+//         padding: 5px 0;
+//         border-top: 1px solid #ffffff59;
+//         justify-content: space-between;
+//         height: 60px;
+//         .prize {
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: flex-end;
+//           width: 40%;
+//           .from-p {
+//             color: #fff;
+//             font-size: 10px;
+//             font-family: "Roboto-Regular";
+//             padding-bottom: 5px;
+//           }
+//           .from-prize {
+//             color: #fff;
+//             font-size: 16px;
+//             font-family: "Roboto-Regular";
+//           }
+//           .members-only {
+//             .members {
+//               color: #fff;
+//               font-size: 10px;
+//               font-family: "Roboto-Regular";
+//               padding-bottom: 5px;
+//             }
+//             .members-prize {
+//               color: #fff;
+//               font-size: 16px;
+//               font-family: "Roboto-Regular";
+//             }
+//           }
+//         }
+//         .booking-button {
+//           display: flex;
+//           .a-booking-button {
+//             align-self: flex-end;
+//             padding: 10px 25px;
+//             text-decoration: none;
+//             color: #fff;
+//             font-size: 14px;
+//             font-family: "Cormorant_Garamond-Semibold";
+//             background-color: #866d4b;
+//           }
+
+//           .a-booking-button:hover {
+//             color: #866d4b;
+//             background-color: #fff;
+//             border: 1px solid #866d4b;
+//             font-family: "Cormorant_Garamond-bold";
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .offer-item4:hover {
+//     img {
+//       transform: scale(1.2);
+//     }
+//   }
+
+//   .offer-item5 {
+//     position: relative;
+//     height: 404px;
+//     overflow: hidden;
+//     img {
+//       width: 373px;
+//       height: 404px;
+//       transition: transform 0.4s ease;
+//     }
+
+//     .overlay {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       height: 100%;
+//       width: 100%;
+//       background-color: #29232300;
+//       background-image: linear-gradient(
+//         rgb(100, 100, 100, 0),
+//         rgb(0, 0, 0, 0.8)
+//       );
+//     }
+
+//     .offer-details {
+//       width: 100%;
+//       padding: 30px;
+//       position: absolute;
+//       bottom: 0;
+//       h4 {
+//         font-size: 26px;
+//         font-family: "Cormorant_Garamond-Medium";
+//         color: #fff;
+//         font-weight: 400;
+//         text-shadow: 0px 3px 6px #000000a6;
+//       }
+//       .vd {
+//         margin: 10px 0 20px 0;
+//         font-size: 12px;
+//         font-family: "Roboto-Regular";
+//         color: #fff;
+//       }
+
+//       .prize-details {
+//         width: 100%;
+//         display: flex;
+//         padding: 5px 0;
+//         border-top: 1px solid #ffffff59;
+//         justify-content: space-between;
+//         height: 60px;
+//         .prize {
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: flex-end;
+//           width: 40%;
+//           .from-p {
+//             color: #fff;
+//             font-size: 10px;
+//             font-family: "Roboto-Regular";
+//             padding-bottom: 5px;
+//           }
+//           .from-prize {
+//             color: #fff;
+//             font-size: 16px;
+//             font-family: "Roboto-Regular";
+//           }
+//           .members-only {
+//             .members {
+//               color: #fff;
+//               font-size: 10px;
+//               font-family: "Roboto-Regular";
+//               padding-bottom: 5px;
+//             }
+//             .members-prize {
+//               color: #fff;
+//               font-size: 16px;
+//               font-family: "Roboto-Regular";
+//             }
+//           }
+//         }
+//         .booking-button {
+//           display: flex;
+//           .a-booking-button {
+//             align-self: flex-end;
+//             padding: 10px 25px;
+//             text-decoration: none;
+//             color: #fff;
+//             font-size: 14px;
+//             font-family: "Cormorant_Garamond-Semibold";
+//             background-color: #866d4b;
+//           }
+//           .a-booking-button:hover {
+//             color: #866d4b;
+//             background-color: #fff;
+//             border: 1px solid #866d4b;
+//             font-family: "Cormorant_Garamond-bold";
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .offer-item5:hover {
+//     img {
+//       transform: scale(1.2);
+//     }
+//   }
+// }
