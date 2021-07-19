@@ -2717,3 +2717,7 @@ textarea:focus {
   background-color: #29232300;
   background-image: linear-gradient(rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.8));
 }
+.properties-list a {
+
+  color:#ffffff;
+}
