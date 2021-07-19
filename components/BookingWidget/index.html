@@ -7,17 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../site/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../site/dist/custom.css">
-    <link rel="stylesheet" type="text/css" href="../../site/css/daterangepicker.css" /> 
+    <link rel="stylesheet" type="text/css" href="../../site/css/daterangepicker.css" />
   </head>
   <body>
 
     <section class="home-booking-widget">
-      <div class="template-container">
+      <div class="grid-container">
         <div class="home-booking-widget_section">
           <div class="home-booking-widget_section-top">
             <div class="home-booking-widget_section-top__search_container">
               <i class="fa fa-search"></i>
               <input type="text" class="home-booking-widget_section-top__search_container_input gold_input" autocomplete="off" placeholder="Fraser Suites Le Claridge Champs Elysees, Paris" />
+              <div class="home-booking-widget_section-top__search_container_search_list--container">
+                <p class="home-booking-widget_section-top__search_container_search_list--container_country-name"><a href="#">indonesia</a></p>
+                <span class="home-booking-widget_section-top__search_container_search_list--container_state"><a href="#">jhakarta</a></span>
+                <ul class="home-booking-widget_section-top__search_container_search_list--container_list">
+                  <li><a href="#">Fraser Suites CBD, Beijing China</a></li>
+                  <li><a href="#">Fraser Suites CBD, Beijing China</a></li>
+                  <li><a href="#">Fraser Suites CBD, Beijing China</a></li>
+                </ul>
+              </div>
             </div>
             <div class="home-booking-widget_section-top__date_picker">
               <input id="home_booking_calendar" type="text" class="home-booking-widget_section-top__search_container--date_input gold_input" placeholder="Thu, Jun 03 - Sat, Jun 05" name="daterangepicker" />
@@ -30,8 +39,21 @@
             </div>
           </div>
           <div class="home-booking-widget_section-bottom">
-            <div class="home-booking-widget_section-bottom_">
-
+            <div class="home-booking-widget_section-bottom_container">
+              <div class="home-booking-widget_section-bottom_container--left">
+                <div class="form-checkbox">
+                  <input class="checkbox" type="checkbox" id="checkbox1">
+                  <label for="checkbox1" tabindex="1">Use Points</label>
+                </div>
+                <div class="form-control">
+                  <input type="text" class="promo_code" placeholder="Enter Promo Code" />
+                </div>
+              </div>
+              <div class="home-booking-widget_section-bottom_container--right">
+                <div class="">
+                  <p>Best Rates Guarantee</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -43,9 +65,32 @@
   <script type="text/javascript" src="../../site/js/moment.min.js"></script>
   <script type="text/javascript" src="../../site/js/daterangepicker.min.js"></script>
   <script type="text/javascript">
+    
+    // json call
+    
+    // $(function(){
+      // $.getJSON( "../../site/utils/hotelsArrList.json", function( data ) {
+      //   var items = [];
+      //   $.each( data, function( key, val ) {
+      //     val.filter((value) => {
+      //       console.log()
+      //     })
+          // if(true){
+          // items.push("<p class='home-booking-widget_section-top__search_container_search_list--container_country-name'>" + val.country + "</p>" +
+          //   "<span class='home-booking-widget_section-top__search_container_search_list--container_state'>" + val.city + "</span>" + 
+          //   "<ul class='home-booking-widget_section-top__search_container_search_list--container_list'>" +
+          //     "<li><a href='#'>" + val.name + "</a></li>" +
+          //   "</ul>"
+          // );
+          // $(".home-booking-widget_section-top__search_container_search_list--container").append(items)
+          // }
+    //     });
+    //   });
+    // })
+
     $(function(){
+      
       var vals=$('#home_booking_calendar').daterangepicker();
-          // console.log(vals);
       $('input[name="daterangepicker"]').daterangepicker({
         minDate:new Date()
       });
@@ -54,6 +99,5 @@
       $('.right').prepend('<span id="right"> offer is not available on selected dates </span>'); 
 
     })
-  
   </script>
 </html>

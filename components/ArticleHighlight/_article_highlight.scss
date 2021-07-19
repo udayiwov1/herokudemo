@@ -29,6 +29,7 @@
     &_description {
       padding: 25px 45px;
       color: #5f5f5f;
+      border: 1px solid transparent !important;
       line-height: 1.5;
       p {
         font-size: 16px;
@@ -126,22 +127,22 @@
   animation-fill-mode: forwards;
   animation-timing-function: steps(20000);
 }
-.ml6 {
+.ml6,.ml61 {
   position: relative;
   font-weight: 900;
   font-size: 3.3em;
   opacity: 0;
  }
 
-.ml6 .text-wrapper {
+.ml6 .text-wrapper ,.ml61 .text-wrapper1 {
  position: relative;
   display: inline-block;
   padding-top: 0.2em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
-  overflow: hidden; 
+  overflow: hidden !important; 
 }
-.ml6 .letter {
+.ml6 .letter, .ml61 .letter1 {
   display: inline-block;
   line-height: 1em;
 }
