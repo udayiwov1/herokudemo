@@ -43,16 +43,14 @@
               <div class="home-booking-widget_section-bottom_container--left">
                 <div class="form-checkbox">
                   <input class="checkbox" type="checkbox" id="checkbox1">
-                  <label for="checkbox1" tabindex="1">Use Points</label>
+                  <label for="checkbox1" tabindex="1">use points</label>
                 </div>
                 <div class="form-control">
-                  <input type="text" class="promo_code" placeholder="Enter Promo Code" />
+                  <input type="text" class="home-booking-widget_section-bottom_container--left_promo_code" placeholder="enter promo code" />
                 </div>
               </div>
               <div class="home-booking-widget_section-bottom_container--right">
-                <div class="">
-                  <p>Best Rates Guarantee</p>
-                </div>
+                <a href="">Best Rates Guarantee</a>
               </div>
             </div>
           </div>
@@ -65,39 +63,18 @@
   <script type="text/javascript" src="../../site/js/moment.min.js"></script>
   <script type="text/javascript" src="../../site/js/daterangepicker.min.js"></script>
   <script type="text/javascript">
-    
-    // json call
-    
+
+
     // $(function(){
-      // $.getJSON( "../../site/utils/hotelsArrList.json", function( data ) {
-      //   var items = [];
-      //   $.each( data, function( key, val ) {
-      //     val.filter((value) => {
-      //       console.log()
-      //     })
-          // if(true){
-          // items.push("<p class='home-booking-widget_section-top__search_container_search_list--container_country-name'>" + val.country + "</p>" +
-          //   "<span class='home-booking-widget_section-top__search_container_search_list--container_state'>" + val.city + "</span>" + 
-          //   "<ul class='home-booking-widget_section-top__search_container_search_list--container_list'>" +
-          //     "<li><a href='#'>" + val.name + "</a></li>" +
-          //   "</ul>"
-          // );
-          // $(".home-booking-widget_section-top__search_container_search_list--container").append(items)
-          // }
-    //     });
-    //   });
-    // })
-
-    $(function(){
       
-      var vals=$('#home_booking_calendar').daterangepicker();
-      $('input[name="daterangepicker"]').daterangepicker({
-        minDate:new Date()
-      });
+    //   var vals=$('#home_booking_calendar').daterangepicker();
+    //   $('input[name="daterangepicker"]').daterangepicker({
+    //     minDate:new Date()
+    //   });
 
-      $('.left').prepend('<span id="left"> check Availability </span>'); 
-      $('.right').prepend('<span id="right"> offer is not available on selected dates </span>'); 
+    //   $('.left').prepend('<span id="left"> check Availability </span>'); 
+    //   $('.right').prepend('<span id="right"> offer is not available on selected dates </span>'); 
 
-    })
+    // })
   </script>
 </html>

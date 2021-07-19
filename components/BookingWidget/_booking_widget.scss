@@ -7,11 +7,11 @@
     @extend .justify-content-center;
     @extend .align-items-center;
     flex-direction: column;
-    border: 1px solid #ccc;
-    padding: 5px;
+    box-shadow: 0px 13px 30px #71717157;
     background-color: #fff;
     @extend .p-absolute;
-    // bottom: 13%;
+    bottom: 7%;
+    // top: 5%;
     left: 0;
     right: 0;
     z-index: 99;
@@ -26,7 +26,7 @@
       &__search_container{
         @extend .d-flex;
         @extend .align-items-center; 
-        width: 42%;
+        width: 46%;
         margin-right: 1%;
         @extend .p-relative;
         i.fa {
@@ -54,7 +54,7 @@
           overflow-y: scroll;
           display: none;
           &_country-name{
-            display: block;
+            @extend .d-block;
             font-family: 'Cormorant_Garamond-SemiBold';
             font-size: 16px;
             text-transform: uppercase;
@@ -69,7 +69,7 @@
             }
           }
           &_state{
-            display: block;
+            @extend .d-block;
             font-family: 'Roboto-Medium';
             font-size: 14px;
             margin-bottom: 5px;
@@ -79,7 +79,7 @@
             }
             > a{
               color: #434343;
-              display: block;
+              @extend .d-block;
             }
           }
           &_list{
@@ -95,7 +95,7 @@
                 background-color: #eee;
               }
               > a{
-                display: block;
+                @extend .d-block;
               }
             }
           }
@@ -106,14 +106,16 @@
         border-color: #866D4B;
         color: #aaa8a5;
         margin-right: 1%;
+        width: 18%;
       }
       &__pax_selector {
         padding: 5px 10px;
-        width: 17%;
+        width: 14%;
       }
       &__check_rate {}
     }
     &-bottom{
+      background-color: #E6E4E4;
       width: 100%;
       &_container{
         @extend .d-flex;
@@ -121,11 +123,33 @@
         @extend .align-items-center;
         &--left{
           @extend .d-flex;
-          @extend .justify-content-between;
+          @extend .justify-content-space-around;
           @extend .align-items-center;
+          width: 40%;
+          padding: 0 0 0 1%;
+          &_promo_code{
+            background-color: #F7F7F7;
+            border-color: transparent;
+            border-radius: 4px;
+            font-family: "Roboto-Regular";
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 0px 20px 0px 20px;
+            margin: 5px 0;
+            text-align: center;
+          }
         }
         &--right{
-          
+          width: 20%;
+          text-align: center;
+          font-family: "Roboto-Regular";
+          font-size: 12px;
+          color: #866D4B;
+          > a{
+            display: inline-block;
+            border-bottom: 1px solid #866D4B;
+            padding-bottom: 2px;
+          }
         }
       }  
     }
