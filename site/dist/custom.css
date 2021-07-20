@@ -2323,29 +2323,6 @@ textarea:focus {
 }
 
 
-/* .weekend:after {
-  position: absolute !important;
-  content: "";
-  left: 0px !important;
-  top: 6px !important;
-  margin-top: 11px !important;
-  width: 50px !important;
-  height: 2px !important;
-  background: black !important;
-  transform: rotate(-25deg);
-}
-.weekend:before {
-  position: absolute !important;
-  content: "";
-  left: 0px !important;
-  top: 6px !important;
-  margin-top: 11px !important;
-  width: 50px !important;
-  height: 2px !important;
-  background: black !important;
-  transform: rotate(25deg);
-} */
-
 .banner-slider-container .banner-slider-container__header {
   flex-direction: column;
   margin-bottom: 30px;
@@ -2856,4 +2833,21 @@ textarea:focus {
 .home-booking-widget_section-top__date_picker,
 .home-booking-widget_section-top__pax_selector {
   width: 20%;
+}
+
+.price-value {
+  font-size:9px;
+}
+
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: unset !important;
+}
+
+td.date-cell.unavailable {
+  color: #999;
+  padding-bottom:23px;
+  cursor: not-allowed;
+  text-decoration: line-through !important;  
 }

@@ -262,17 +262,17 @@
   </section>
   <!-- Fraser World ends -->
 
-   <!-- global footprint starts -->
-   <section class="global-footprint">
+  <!-- global footprint starts -->
+  <section class="global-footprint">
     <div class="global-footprint-header-container">
-        <div class="global-footprint-header">
-          <div class="grid-container">
-            <div class="column global-footprint-header">
-              <h2>OUR GLOBAL FOOTPRINT</h2>
-              <p class="global-footprint-veiwmore"><a href="#">VIEW ALL LOCATIONS</a></p>
-            </div>
+      <div class="global-footprint-header">
+        <div class="grid-container">
+          <div class="column global-footprint-header">
+            <h2>OUR GLOBAL FOOTPRINT</h2>
+            <p class="global-footprint-veiwmore"><a href="#">VIEW ALL LOCATIONS</a></p>
           </div>
         </div>
+      </div>
     </div>
     <div class="owl-carousel owl-theme">
       <div class="item">
@@ -924,7 +924,7 @@
       let progress = $('.swiper-progress-bar .progress');
       $('.swiper-counter .current').html(this.activeIndex + 1);
       if ((this.progress == -0 || (this.progress == 1 && this.params.loop)) && !progress.parent().is(
-        '.stopped')) {
+          '.stopped')) {
         progress.css('width', '0');
         if (this.activeIndex == 0) {
           initProgressBar();
@@ -1072,50 +1072,93 @@
     }
   });
 
-$(function() {
-var date = new Date();
-var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-$('input[name="dates"]').daterangepicker({
-    autoUpdateInput: false,
-    minDate: today,
-    opens: 'center',
-    autoApply:true
-});
+  const map = new Map();
+  var jqxhr = $.get("../../site/utils/calendar.json", function (obj) {
+    for (var i = 0; i < obj.data.length; i++) {
+      var item = {};
+      var date = obj.data[i].date;
+      item.available = obj.data[i].available;
+      item.currencyCode = obj.data[i].currencyCode;
+      item.price = obj.data[i].price;
+      map.set(date, item);
+    }
+  })
 
-$('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
-    $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-});
 
-});
-
-$(function(){
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {
-        myFunction()
-      };
-      // Get the navbar
-      var navbar = document.getElementById("primary-nav");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("fixed_nav");
-          $('body').css({
-            'padding-top': 35
-          })
-          $(".home-booking-widget_section").css({
-            'bottom': '-15%'
-          });
+  $(function () {
+    var endDate = "2021-09-20";
+    var date = new Date();
+    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    $('input[name="dates"]').daterangepicker({
+      autoUpdateInput: true,
+      format: "YYYY-MM-D",
+      minDate: today,
+      maxDate: new Date(endDate),
+      opens: 'center',
+      autoApply: true,
+      isCustomDate: function (date) {
+        if (map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d).format(
+            "YYYY-MM-DD")).available == true) {
+          return 'date-cell price'+map.get(moment(date._d).format("YYYY-MM-DD")).currencyCode +" "+ map.get(moment(date._d).format("YYYY-MM-DD")).price + 'price';
+        } else if(map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d).format(
+            "YYYY-MM-DD")).available == false) {
+          return 'off ends off disabled date-cell unavailable';
         } else {
-          navbar.classList.remove("fixed_nav");
-          $('body').removeAttr('style');
-          $(".home-booking-widget_section").removeAttr('style');
+          return 'date-cell'
+        }
+
+      },
+      isInvalidDate: function (date) {
+        //console.log("Date>>" + date.format('YYYY-M-D'));
+        if (date.format('YYYY-M-D') == '2021-7-24') {
+          return true;
         }
       }
-    })
+    });
+    $('input[name="dates"]').on('showCalendar.daterangepicker', function () {
+      $('.calendar-table .table-condensed tbody td').each(function (i, e) {
+        if($(this).attr('class') != null){
+                        var priceTempArr = $(this).attr('class').split('price');
+                        if(priceTempArr.length>1 && priceTempArr[1] != "undefined"){
+                            $("<p class='price-value'>"+priceTempArr[1]+"</p>").appendTo($(this));
+                        }   
+                    }
+      });
+    });
 
+    $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+
+  });
+
+  $(function () {
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction()
+    };
+    // Get the navbar
+    var navbar = document.getElementById("primary-nav");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("fixed_nav");
+        $('body').css({
+          'padding-top': 35
+        })
+        $(".home-booking-widget_section").css({
+          'bottom': '-15%'
+        });
+      } else {
+        navbar.classList.remove("fixed_nav");
+        $('body').removeAttr('style');
+        $(".home-booking-widget_section").removeAttr('style');
+      }
+    }
+  })
 </script>
 
 </html>
