@@ -1,0 +1,98 @@
+[
+   {
+      "text": "China",
+         "children": [
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites CBD, Beijing China",
+               "id":"52624",
+               "status":"1",
+               "region":"North Asia",
+               "country":"China",
+               "city":"Beijing",
+               "property":"frasersuitescbdbeijing"
+            },
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites CBD, Beijing China",
+               "id":"52624",
+               "status":"1",
+               "region":"North Asia",
+               "country":"China",
+               "city":"Beijing",
+               "property":"frasersuitescbdbeijing"
+            }
+         ]
+   },
+   {
+      "text": "Japan",
+         "children": [
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites Akasaka, Tokyo",
+               "id":"9912",
+               "status":"1",
+               "region":"North Asia",
+               "country":"Japan",
+               "city":"Tokyo",
+               "property":"frasersuitesakasaka"
+            }
+         ]
+   },
+   {
+      "text": "Qatar",
+         "children": [
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites Doha, Qatar",
+               "id":"52967",
+               "status":"1",
+               "region":"Europe/Middle East",
+               "country":"Qatar",
+               "city":"Doha",
+               "property":"frasersuitesdoha"
+            }
+         ]
+   },
+   {
+      "text": "Switzerland",
+         "children": [
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites Geneva, Switzerland",
+               "id":"65676",
+               "status":"1",
+               "region":"Europe/Middle East",
+               "country":"Switzerland",
+               "city":"Geneva",
+               "property":"frasersuitesgeneva"
+            }
+         ]
+   },
+   {
+      "text": "United Kingdom",
+         "children": [
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites Edinburgh, Scotland",
+               "id":"52611",
+               "status":"1",
+               "region":"Europe/Middle East",
+               "country":"United Kingdom",
+               "city":"Edinburgh",
+               "property":"frasersuitesedinburghscotland"
+            },
+            {
+               "brand":"Fraser",
+               "text":"Fraser Suites Glasgow, Scotland",
+               "id":"52610",
+               "status":"1",
+               "region":"Europe/Middle East",
+               "country":"United Kingdom",
+               "city":"Glasgow",
+               "property":"frasersuitesglasgowscotland"
+            }
+         ]
+   }
+]
+
