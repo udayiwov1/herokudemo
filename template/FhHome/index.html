@@ -1009,7 +1009,6 @@
       }
     });
 
-    console.log(result);
     return {
       results: result
     };
@@ -1027,7 +1026,7 @@
         };
       },
       processResults: matchStart,
-      cache: true
+      cache: false
     }
   });
 
@@ -1086,6 +1085,7 @@
 
 
   $(function () {
+  
     var endDate = "2021-09-20";
     var date = new Date();
     var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -1097,38 +1097,40 @@
       opens: 'center',
       autoApply: true,
       isCustomDate: function (date) {
-        if (map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d).format(
-            "YYYY-MM-DD")).available == true) {
-          return 'date-cell price'+map.get(moment(date._d).format("YYYY-MM-DD")).currencyCode +" "+ map.get(moment(date._d).format("YYYY-MM-DD")).price + 'price';
-        } else if(map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d).format(
-            "YYYY-MM-DD")).available == false) {
-          return 'off ends off disabled date-cell unavailable';
-        } else {
-          return 'date-cell'
-        }
-
-      },
-      isInvalidDate: function (date) {
-        //console.log("Date>>" + date.format('YYYY-M-D'));
-        if (date.format('YYYY-M-D') == '2021-7-24') {
-          return true;
+        var slectedHotelId = $('#booking-hotel :selected').val()
+        if (slectedHotelId != "" && slectedHotelId != null) {
+          if (map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d).format(
+              "YYYY-MM-DD")).available == true) {
+            return 'date-cell price' + map.get(moment(date._d).format("YYYY-MM-DD")).currencyCode + " " + map
+              .get(moment(date._d).format("YYYY-MM-DD")).price + 'price';
+          } else if (map.get(moment(date._d).format('YYYY-MM-DD')) != undefined && map.get(moment(date._d)
+              .format(
+                "YYYY-MM-DD")).available == false) {
+            return 'off ends off disabled date-cell unavailable';
+          } else {
+            return 'date-cell'
+          }
         }
       }
     });
     $('input[name="dates"]').on('showCalendar.daterangepicker', function () {
       $('.calendar-table .table-condensed tbody td').each(function (i, e) {
-        if($(this).attr('class') != null){
-                        var priceTempArr = $(this).attr('class').split('price');
-                        if(priceTempArr.length>1 && priceTempArr[1] != "undefined"){
-                            $("<p class='price-value'>"+priceTempArr[1]+"</p>").appendTo($(this));
-                        }   
-                    }
+        if ($(this).attr('class') != null) {
+          var priceTempArr = $(this).attr('class').split('price');
+          if (priceTempArr.length > 1 && priceTempArr[1] != "undefined") {
+            $("<p class='price-value'>" + priceTempArr[1] + "</p>").appendTo($(this));
+          }
+        }
       });
     });
 
-    $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
-      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-    });
+    $(".datepicker .available td").click(function(){
+    alert('day clicked');	
+  });
+
+    // $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
+    //   $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    // });
 
   });
 
