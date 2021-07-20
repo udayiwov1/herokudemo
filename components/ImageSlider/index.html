@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Image Slider</title>
+    <link rel="stylesheet" href="../../site/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../site/dist/custom.css">
+</head>
+<body>
+
+  <style>
+    .swiper-container {
+    width: 800px;
+    height: 200px;
+ 
+} 
+
+.swiper-slide {
+   background-color: purple;
+
+}
+
+.blue {
+  background-color: blue;
+  border: 1px solid green;
+}
+
+.red {
+  background-color: red;
+  border: 1px solid red;
+}
+  </style>
+  <!-- <section class="banner-slider-container">
+    <div class="banner-slider-container__header mt-50">
+    <div>
+      <h2>FRASER <span class="sebastian-boby2">Difference</span></h2>
+      <p>The epitome of the countless awards and accolades we have garnered to date is our attention to detail which distinguishes Frasers Hospitality from the rest. Every customer’s touchpoint and encounter are met with service intuition and memorable experiences that has become our trademark.</p>
+    </div>
+    </div>
+    <div class="grid-container mb-50">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../../resources/images/banner/proxyclick-visitor-management-system-ZRC0Hj_2kY0-unsplash@2x.png" alt="slider1">
+            <div class="banner-slider-info">
+              <h3>Award Winning Services</h3>
+              <p>No detail is too small; no hour too late. 
+                It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/Fraser_difference.png" alt="slider2">
+            <div class="banner-slider-info">
+              <h3>Award Winning Services</h3>
+              <p>No detail is too small; no hour too late. 
+                It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/islider3.png" loading="lazy" />
+            <div class="banner-slider-info">
+              <h3>Award Winning Services</h3>
+              <p>No detail is too small; no hour too late. 
+                It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../../resources/images/image-slider/islider2.png" alt="slider2" loading="lazy" />
+            <div class="banner-slider-info">
+              <h3>Award Winning Services</h3>
+              <p>No detail is too small; no hour too late. 
+                It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-progress-bar">
+        <div class="progress"></div>
+        <div class="progress-sections"></div>
+      </div>
+    </div>
+  </section> -->
+<!-- Slider main container -->
+
+<div class="banner-slider-container__header mt-50">
+  <div class="grid-container mb-50">
+<div class="swiper-container mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="../../resources/images/image-slider/islider2.png" alt="slider2" loading="lazy" />
+        <div class="banner-slider-info">
+          <h3>Award Winning Services</h3>
+          <p>No detail is too small; no hour too late. 
+            It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+          </p>
+        </div>
+
+      </div>
+      <div class="swiper-slide blue">
+        <!-- <img src="../../resources/images/image-slider/islider3.png" loading="lazy" /> -->
+        <div class="banner-slider-info">
+          <h3>Award Winning Services</h3>
+          <p>No detail is too small; no hour too late. 
+            It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+          </p>
+        </div>
+
+      </div>
+      <div class="swiper-slide red">
+        <!-- <img src="../../resources/images/image-slider/Fraser_difference.png" alt="slider2"> -->
+        <div class="banner-slider-info">
+          <h3>Award Winning Services</h3>
+          <p>No detail is too small; no hour too late. 
+            It is all about making you feel at home and going away with a peace of mind knowing your home will be better than when you left.
+          </p>
+        </div></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
+  <!-- If we need navigation buttons -->
+<!--     <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+  
+  <!-- If we need scrollbar -->
+<!--     <div class="swiper-scrollbar"></div> -->
+</div>
+</div>
+</div>
+  <script src="../../site/js/jquery.min.js"></script>
+  <!-- <script src="../../site/js/swiper-bundle.min.js"></script>   -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+  <script>
+         
+  var mySwiper = new Swiper ('.swiper-container', {
+    speed: 400,
+    spaceBetween: 50,
+    initialSlide: 0,
+    //truewrapper adoptsheight of active slide
+    autoHeight: false,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // delay between transitions in ms
+    autoplay: 5000,
+    autoplayStopOnLast: false, // loop false also
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    paginationType: "bullets",
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    // And if we need scrollbar
+    //scrollbar: '.swiper-scrollbar',
+    // "slide", "fade", "cube", "coverflow" or "flip"
+    effect: 'slide',
+    // Distance between slides in px.
+    spaceBetween: 20,
+    //
+    slidesPerView: 2,
+    //
+    centeredSlides: true,
+    //
+    slidesOffsetBefore: 0,
+    //
+    grabCursor: true,
+  })        
+
+  </script>
+</body>
+</html>

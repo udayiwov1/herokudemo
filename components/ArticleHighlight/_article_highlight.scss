@@ -23,20 +23,21 @@
         font-family: "Cormorant_Garamond-Regular";
         font-weight: 400;
         @extend .p-absolute;
-        right: 15px;
+        right: 0px;
+       
       }
     }
     &_description {
-      padding: 25px 45px;
-      color: #5f5f5f;
-      border: 1px solid transparent !important;
+      padding: 20px 45px;
+      color: #5f5f5f;  
       line-height: 1.5;
       p {
         font-size: 16px;
         width: 68%;
         font-family: "Roboto-Regular";
-        margin-left: 14%;
-        word-spacing: 1px;
+        margin-left: 17%;
+        word-spacing: 0.7px;
+        
       }
     }
   }
@@ -46,6 +47,7 @@
     @extend .justify-content-between;
     &--card{
       width: 28%;
+      
       margin-top: 10px;
       &--image-container{
         display: inline-block;

@@ -1474,6 +1474,7 @@ textarea:focus {
   text-align: center;
   color: #fff;
   background-image: linear-gradient(144deg, #414141 1%, #1a1813 80%);
+  height: 340px;
 }
 .fraser-world__container__text_container__brands_showcase::before {
   content: "";
@@ -2369,7 +2370,7 @@ textarea:focus {
   margin-bottom: 10px;
   font-size: 24px;
   color: #222222;
-  font-family: "Cormorant_Garamond-Regular";
+  font-family: "Cormorant_Garamond-Medium";
 }
 .banner-slider-container .swiper-container .swiper-wrapper .swiper-slide .banner-slider-info p {
   padding: 0 40px;
@@ -2489,20 +2490,19 @@ textarea:focus {
   color: #866d4b;
   font-family: "Cormorant_Garamond-Regular";
   font-weight: 400;
-  right: 15px;
+  right: 0px;
 }
 .article_highlight__heading--container_description {
-  padding: 25px 45px;
+  padding: 20px 45px;
   color: #5f5f5f;
-  border: 1px solid transparent !important;
   line-height: 1.5;
 }
 .article_highlight__heading--container_description p {
   font-size: 16px;
   width: 68%;
   font-family: "Roboto-Regular";
-  margin-left: 14%;
-  word-spacing: 1px;
+  margin-left: 17%;
+  word-spacing: 0.7px;
 }
 .article_highlight_content--card {
   width: 28%;
