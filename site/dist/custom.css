@@ -1393,7 +1393,7 @@ textarea:focus {
   font-weight: 400;
   color: #866d4b;
   position: absolute;
-  right: 15px;
+  right: 0px;
 }
 .global-footprint .owl-carousel .owl-stage-outer {
   padding: 50px;
