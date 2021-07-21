@@ -2877,6 +2877,7 @@ td.date-cell.unavailable .price-value, td.date-cell.passdate .price-value, .drp-
  visibility: hidden;
 }
 
+
 .daterangepicker .drp-buttons .btn.btn-primary {
   margin-left: 8px;
   font-size: 12px;
