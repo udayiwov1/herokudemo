@@ -459,6 +459,11 @@ textarea:focus {
   position: sticky;
 }
 
+.primary-nav.fixed_nav1{
+ top:50px !important;
+}
+ 
+
 .p-absolute, .offer-highlights .overlay, .offer-highlights_row-right--details, .article_highlight__heading--container_title-container p:nth-child(2), .swiper-progress-bar .progress-sections, .swiper-progress-bar .progress, .home-booking-widget_section-top__search_container_search_list--container, .home-booking-widget_section, .hero-image-carousel .hero-image-carousel__image-container .owl-dots, .hero-image-carousel .hero-image-carousel__image-container h1, .footer_back-top-top, .fraser-world__container__text_container_title-container--title_text::after, .fraser-world__container__text_container__brands_showcase--fraser_logo:nth-child(0)::after, .fraser-world__container__text_container__brands_showcase::before, .hashtag-alert-absolute, .primary-nav, .overlay, .checkbox, .checkbox + label:before, .checkbox + label:after {
   position: absolute;
 }

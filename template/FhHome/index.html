@@ -972,15 +972,19 @@
     var lastScrollTop = 0,
       delta = 5;
     $(window).scroll(function () {
+    
       var nowScrollTop = $(this).scrollTop();
       if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
+        var navbar = document.getElementById("primary-nav");
         if (nowScrollTop > lastScrollTop) {
           $(".global-header").css({
             'position': 'relative'
           });
           $('body').removeAttr('style');
+          navbar.classList.remove("fixed_nav1");
           $(".home-booking-widget_section").removeAttr('style');
         } else {
+          navbar.classList.add("fixed_nav1");
           $(".global-header").css({
             'position': 'fixed',
             'top': 0,
@@ -1117,7 +1121,7 @@
       minDate: today,
       maxDate: new Date(endDate),
       opens: 'center',
-      autoApply: true,
+      autoApply: false,
       isCustomDate: function (date) {
         var slectedHotelId = $('#booking-hotel :selected').val()
         if (slectedHotelId != "" && slectedHotelId != null) {
@@ -1145,10 +1149,6 @@
         }
       });
     });
-
-    $(".datepicker .available td").click(function(){
-    alert('day clicked');	
-  });
 
     // $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
     //   $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
