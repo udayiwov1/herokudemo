@@ -2873,6 +2873,24 @@ td.date-cell.disabled.unavailable {
   color: #000 !important;
   position: relative;
 }
-td.date-cell.unavailable .price-value, td.date-cell.passdate .price-value {
+td.date-cell.unavailable .price-value, td.date-cell.passdate .price-value, .drp-selected {
  visibility: hidden;
+}
+
+.daterangepicker .drp-buttons .btn.btn-primary {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  background-color: #866D4B;
+  color: #ffffff;
+}
+.daterangepicker .drp-buttons .btn.btn-default {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  background-color: #866D4B;
+  color: #ffffff;
+  opacity: 0.7;
 }
