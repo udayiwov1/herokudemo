@@ -1145,6 +1145,9 @@
           var priceTempArr = $(this).attr('class').split('price');
           if (priceTempArr.length > 1 && priceTempArr[1] != "undefined") {
             $("<p class='price-value'>" + priceTempArr[1] + "</p>").appendTo($(this));
+          } 
+          else {
+            $("<p class='price-value'>&nbsp;</p>").appendTo($(this));
           }
         }
       });

@@ -2,6 +2,12 @@
   "data": [{
     "available": true,
     "currencyCode": "S$",
+    "date": "2021-07-21",
+    "price": 139
+  },
+  {
+    "available": true,
+    "currencyCode": "S$",
     "date": "2021-07-22",
     "price": 139
   }, {
