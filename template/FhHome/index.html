@@ -124,8 +124,8 @@
           <div class="home-booking-widget_section-top__search_container">
             <i class="fa fa-search"></i>
             <select class="gold_input" id='booking-hotel' name='booking-hotel' data-value=""
-              data-placeholder='Please select'
-              data-error="Please select" data-children-age-limit="" data-infant-age-limit="">
+              data-placeholder='Where are you planning to travel?'
+              data-error="Where are you planning to travel?" data-children-age-limit="" data-infant-age-limit="">
               <option value="" selected></option>
             </select>
 
@@ -1122,9 +1122,6 @@
 
 
   $(function () {
-  
-
-
     var endDate = "2021-09-20";
     var date = new Date();
     var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -1132,6 +1129,10 @@
       autoUpdateInput: true,
       format: "YYYY-MM-D",
       minDate: today,
+      range:1,
+      locale: {
+      format: 'ddd, MMM DD'
+       },
       maxDate: new Date(endDate),
       opens: 'center',
       autoApply: false,
