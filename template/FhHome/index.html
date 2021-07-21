@@ -1177,7 +1177,7 @@
   $(function () {
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () {
-     // myFunction()
+      myFunction()
     };
     // Get the navbar
     var navbar = document.getElementById("primary-nav");
@@ -1191,9 +1191,7 @@
         $('body').css({
           'padding-top': 35
         })
-        $(".home-booking-widget_section").css({
-          'bottom': '-100px'
-        });
+       
       } else {
         navbar.classList.remove("fixed_nav");
         navbar.classList.remove("fixed_nav_with_global");
