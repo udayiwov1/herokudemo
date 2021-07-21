@@ -1198,7 +1198,7 @@ textarea:focus {
 
 .primary-nav__list_container {
   width: 87%;
-  padding: 3% 0 0 0;
+  padding: 2% 0 0 0;
   justify-content: center;
   align-items: center;
 }
@@ -2884,4 +2884,11 @@ td.date-cell.unavailable .price-value, td.date-cell.passdate .price-value, .drp-
 }
 .daterangepicker .drp-buttons .btn.btn-default {
   display: none !important;
+}
+
+.primary-nav .check_rate_nav_button {
+  display: none;
+}
+.primary-nav.fixed_nav .check_rate_nav_button {
+  display: block !important;
 }
