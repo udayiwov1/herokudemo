@@ -981,10 +981,10 @@
             'position': 'relative'
           });
           $('body').removeAttr('style');
-          navbar.classList.remove("fixed_nav1");
+          navbar.classList.remove("fixed_nav_with_global");
           $(".home-booking-widget_section").removeAttr('style');
         } else {
-          navbar.classList.add("fixed_nav1");
+          navbar.classList.add("fixed_nav_with_global");
           $(".global-header").css({
             'position': 'fixed',
             'top': 0,
@@ -1178,7 +1178,7 @@
         });
       } else {
         navbar.classList.remove("fixed_nav");
-        navbar.classList.remove("fixed_nav1");
+        navbar.classList.remove("fixed_nav_with_global");
         $('body').removeAttr('style');
         $(".home-booking-widget_section").removeAttr('style');
       }

@@ -459,7 +459,7 @@ textarea:focus {
   position: sticky;
 }
 
-.primary-nav.fixed_nav1{
+.primary-nav.fixed_nav_with_global{
  top:50px !important;
 }
  
