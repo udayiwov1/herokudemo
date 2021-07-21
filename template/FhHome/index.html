@@ -1081,10 +1081,10 @@
       $closestMinus.removeClass('disabled')
     }
 
-    var room = $('.pax-details__row.room').find('.pax-details__number span').html(),
-      adult = $('.pax-details__row.adult').find('.pax-details__number span').html(),
+    // var room = $('.pax-details__row.room').find('.pax-details__number span').html(),
+      var adult = $('.pax-details__row.adult').find('.pax-details__number span').html(),
       children = $('.pax-details__row.children').find('.pax-details__number span').html();
-    var inputValue = `${room} Room, ${adult} Adult, ${children} Children`;
+    var inputValue = ` ${adult} Adult, ${children} Children`;
     $('.home-booking-widget_section__pax-input').val(inputValue);
     });
 
