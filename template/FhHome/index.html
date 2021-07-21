@@ -196,31 +196,31 @@
   </section>
   <!-- booking widget ends -->
 
-  <!-- breadcrumbs starts -->
-  <div class="breadcrumb mb-15" style="margin-top: 75px;">
-    <div class="grid-container">
-      <nav class="cmp-breadcrumb">
-        <ol class="cmp-breadcrumb__list">
-          <li class="cmp-breadcrumb__item">
-            <a href="#" class="cmp-breadcrumb__item-link">
-              <span>Home</span>
-            </a>
-            <meta itemprop="position" content="1">
-          </li>
-          <li class="cmp-breadcrumb__item">
-            <a href="#" class="cmp-breadcrumb__item-link">
-              <span>Our Brands</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
-          <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active">
-            <span>Frasers Hospitality</span>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  <!-- breadcrumbs ends -->
+   <!-- breadcrumbs starts -->
+    <!-- <div class="breadcrumb mb-15"> -->
+      <div class="template-container">
+        <nav class="cmp-breadcrumb" style="margin-top: 75px;">
+          <ol class="cmp-breadcrumb__list">
+            <li class="cmp-breadcrumb__item">
+              <a href="#" class="cmp-breadcrumb__item-link">
+                <span>Home</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="cmp-breadcrumb__item">
+              <a href="#" class="cmp-breadcrumb__item-link">
+                <span>Our Brands</span>
+              </a>
+              <meta itemprop="position" content="2">
+            </li>
+            <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active">
+              <span>Frasers Hospitality</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    <!-- </div> -->
+    <!-- breadcrumbs ends -->
 
   <!-- hashtag alert starts -->
   <div class="hashtag-alert-fixed"><a href="#">#Frasercares - covid - 19</a></div>
@@ -1153,9 +1153,10 @@
       });
     });
 
-    // $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
-    //   $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-    // });
+    $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
+      console.log(picker);
+      $(this).val(picker.startDate.format('ddd, MMM DD') + ' - ' + picker.endDate.format('ddd, MMM DD'));
+    });
 
   });
 
