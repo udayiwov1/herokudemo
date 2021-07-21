@@ -133,9 +133,9 @@
           </div>
           <div class="home-booking-widget_section-top__pax_selector">
             <input type="text" class="home-booking-widget_section__pax-input gold_input"
-              placeholder="1 Room, 1 Adult, 0 Children" />
+              placeholder="1 Adult, 0 Children" />
             <div class="pax-details">
-              <div class="pax-details__row room">
+              <!-- <div class="pax-details__row room">
                 <div class="pax-details__item">
                   Room(s)
                 </div>
@@ -144,7 +144,7 @@
                   <div class="pax-details__number"><span>0</span></div>
                   <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
                 </div>
-              </div>
+              </div> -->
               <div class="pax-details__row adult">
                 <div class="pax-details__item">
                   Adult(s)/Room
@@ -1086,7 +1086,7 @@
       children = $('.pax-details__row.children').find('.pax-details__number span').html();
     var inputValue = `${room} Room, ${adult} Adult, ${children} Children`;
     $('.home-booking-widget_section__pax-input').val(inputValue);
-  });
+    });
 
   $(document).mouseup(function (e) {
     var container = $(".pax-details");
