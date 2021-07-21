@@ -2837,6 +2837,7 @@ textarea:focus {
 
 .price-value {
   font-size:9px;
+  z-index: -1;
 }
 
 .daterangepicker td.disabled, .daterangepicker option.disabled {
