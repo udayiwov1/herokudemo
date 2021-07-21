@@ -119,8 +119,8 @@
           <div class="home-booking-widget_section-top__search_container">
             <i class="fa fa-search"></i>
             <select class="gold_input" id='booking-hotel' name='booking-hotel' data-value=""
-              data-placeholder='Fraser Suites Le Claridge Champs Elysees, Paris'
-              data-error="Please select a destination" data-children-age-limit="" data-infant-age-limit="">
+              data-placeholder='Please select'
+              data-error="Please select" data-children-age-limit="" data-infant-age-limit="">
               <option value="" selected></option>
             </select>
 
@@ -136,33 +136,39 @@
               placeholder="1 Adult, 0 Children" />
             <div class="pax-details">
               <!-- <div class="pax-details__row room">
-                <div class="pax-details__item">
+                <div class="pax-details__title">
                   Room(s)
                 </div>
                 <div class="pax-details__item">
-                  <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
-                  <div class="pax-details__number"><span>0</span></div>
-                  <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  <div class="pax-details__number"><span>0 </span> adult</div>
+                  <div class="pax-details__button">
+                    <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
+                    <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  </div>
                 </div>
               </div> -->
               <div class="pax-details__row adult">
-                <div class="pax-details__item">
+                <div class="pax-details__title">
                   Adult(s)/Room
                 </div>
                 <div class="pax-details__item">
-                  <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
-                  <div class="pax-details__number"><span>1</span></div>
-                  <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  <div class="pax-details__number"><span>0 </span> children</div>
+                  <div class="pax-details__button">
+                    <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
+                    <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="pax-details__row children">
-                <div class="pax-details__item">
+                <div class="pax-details__title">
                   Child(ren)
                 </div>
                 <div class="pax-details__item">
-                  <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
-                  <div class="pax-details__number"><span>0</span></div>
-                  <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  <div class="pax-details__number"><span>0 </span> adult</div>
+                  <div class="pax-details__button">
+                    <a class="pax-details__minus disabled"><i class="fa fa-minus"></i></a>
+                    <a class="pax-details__plus"><i class="fa fa-plus"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1112,6 +1118,8 @@
 
   $(function () {
   
+
+
     var endDate = "2021-09-20";
     var date = new Date();
     var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
